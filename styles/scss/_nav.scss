@@ -1,21 +1,23 @@
 .logo {
    font-family: 'Sacramento', cursive;
    font-size: 5rem;
+   padding: 0 0 20px;
 }
 
-.nav-container {
-   background-color: #c7cfb7;
-}
+   .nav-container {
+      background-color: #c7cfb7;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+   }
 
 nav {
 
-   display: flex;
-   justify-content: space-between;
-   position: fixed;
-   align-items: center;
-   top: 0;
-   left: 0;
-   right: 0;
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
    ul {
       list-style: none;
