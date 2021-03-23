@@ -318,6 +318,54 @@ nav a:hover {
   }
 }
 
+header {
+  height: 80vh;
+  min-height: 500px;
+  max-height: 600px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.self-container {
+  width: 400px;
+  height: 400px;
+  margin: 60px 60px 60px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.self-container .self-drawing, .self-container .self-pic {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #557174;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.shown {
+  opacity: 1;
+}
+
+.name {
+  width: 60%;
+  margin: 80px 0;
+}
+
+h1 {
+  font-size: 6rem;
+  text-shadow: 9px 9px 20px #557174;
+}
+
 .wrapper {
   width: 80vw;
   max-width: 1200px;
@@ -336,6 +384,8 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #f7f7e8;
+  margin-top: 75px;
+  color: #435560;
 }
 
 h1,

@@ -1,6 +1,7 @@
 @import 'setup';
-@import 'nav';
 @import 'mixins';
+@import 'nav';
+@import 'header';
 
 // font-family: 'Cardo', serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -25,6 +26,8 @@ html {
 body {
    font-size: 1.6rem;
    background-color: #f7f7e8;
+   margin-top: 75px;
+   color: #435560;
 }
 
 h1,
