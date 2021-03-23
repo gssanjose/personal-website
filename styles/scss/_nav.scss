@@ -1,0 +1,54 @@
+.logo {
+   font-family: 'Sacramento', cursive;
+   font-size: 5rem;
+}
+
+.nav-container {
+   background-color: #c7cfb7;
+}
+
+nav {
+
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   align-items: center;
+   top: 0;
+   left: 0;
+   right: 0;
+
+   ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   li {
+      margin: 0 15px;
+   }
+
+   a {
+      text-decoration: none;
+      color: #435560;
+      padding: 10px 15px;
+      display: inline-block;
+
+      &:hover {
+         animation: wiggle 1.2s linear infinite 0.1s;
+      }
+
+   }
+
+}
+
+@keyframes wiggle {
+   25% {
+      transform: scale(1.2) rotate(5deg);
+   }
+   38% {
+      transform: scale(1.2) rotate(-5deg);
+   }
+   65% {
+      transform: scale(1.03) rotate(0);
+   }
+}

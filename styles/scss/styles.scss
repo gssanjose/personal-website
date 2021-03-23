@@ -1,5 +1,40 @@
 @import 'setup';
+@import 'nav';
+
+// font-family: 'Cardo', serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Sacramento', cursive;
+
+.wrapper {
+   width: 80vw;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+body, div, section, main, nav, p, a, ul, li, button {
+   margin: 0;
+   padding: 0;
+} 
+
+
+html {
+   font-size: 62.5%;
+}
 
 body {
-   color: oldlace;
+   font-size: 1.6rem;
+   background-color: #f7f7e8;
+}
+
+h1,
+h2,
+h3 {
+   font-family: 'Cardo', serif;
+}
+
+p,
+a,
+li,
+button {
+   font-family: 'Josefin Sans', sans-serif;
 }
