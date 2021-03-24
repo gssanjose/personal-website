@@ -8,13 +8,11 @@ mySite.photoChange = () => {
       // } else {
       //    event.target.src = './images/glen-portrait.png';
       // }
-
       const drawing = document.querySelector('#self-drawing');
       const photo = document.querySelector('#self-pic');
 
       drawing.classList.toggle('shown');
       photo.classList.toggle('hidden');
-
    })
 }
 

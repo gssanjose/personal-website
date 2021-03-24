@@ -2,28 +2,39 @@ header {
    height: 80vh;
    min-height: 500px;
    max-height: 600px;
+   display: flex;
+   align-items: center;
 }
 
 .header-content {
    display: flex;
+   justify-content: space-between;
 }
 
 .self-container {
-      width: 400px;
-      height: 400px;
-      margin: 60px 60px 60px 0;
-      position: relative;
-      cursor: pointer;
+   flex-shrink: 0;
+   width: 320px;
+   height: 320px;
+   position: relative;
+   margin-right: 100px;
+   border-radius: 10px;
+   border: 3px solid #9dad7f;
+   cursor: pointer;
+   transition: border 0.3s;
 
-   .self-drawing, .self-pic {
+   img {
       display: inline-block;
       width: 100%;
-      border: 2px solid #557174;
-      border-radius: 10px;
+      height: 100%;
+      border-radius: 7px;
       position: absolute;
-      transition: all 1s ease;
+      transition: all 0.6s ease;
+
    }
 
+   &:hover, &:focus {
+      border: 3px solid #6e7c7c;
+   }
 }
 
 .hidden {
@@ -36,7 +47,7 @@ header {
 
 .name {
    width: 60%;
-   margin: 80px 0;
+   margin: 50px 0;
    
 }
 

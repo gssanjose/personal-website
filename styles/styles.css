@@ -284,11 +284,11 @@ nav a {
 }
 
 nav a:hover {
-  -webkit-animation: wiggle 1.2s linear infinite 0.1s;
-          animation: wiggle 1.2s linear infinite 0.1s;
+  -webkit-animation: jiggle 1.2s linear infinite 0.1s;
+          animation: jiggle 1.2s linear infinite 0.1s;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes jiggle {
   25% {
     -webkit-transform: scale(1.2) rotate(5deg);
             transform: scale(1.2) rotate(5deg);
@@ -303,7 +303,7 @@ nav a:hover {
   }
 }
 
-@keyframes wiggle {
+@keyframes jiggle {
   25% {
     -webkit-transform: scale(1.2) rotate(5deg);
             transform: scale(1.2) rotate(5deg);
@@ -322,30 +322,49 @@ header {
   height: 80vh;
   min-height: 500px;
   max-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .self-container {
-  width: 400px;
-  height: 400px;
-  margin: 60px 60px 60px 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 320px;
+  height: 320px;
   position: relative;
+  margin-right: 100px;
+  border-radius: 10px;
+  border: 3px solid #9dad7f;
   cursor: pointer;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
 }
 
-.self-container .self-drawing, .self-container .self-pic {
+.self-container img {
   display: inline-block;
   width: 100%;
-  border: 2px solid #557174;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 7px;
   position: absolute;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.self-container:hover, .self-container:focus {
+  border: 3px solid #6e7c7c;
 }
 
 .hidden {
@@ -358,7 +377,7 @@ header {
 
 .name {
   width: 60%;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 h1 {

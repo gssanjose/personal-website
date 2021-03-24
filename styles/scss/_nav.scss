@@ -36,14 +36,14 @@ nav {
       display: inline-block;
 
       &:hover {
-         animation: wiggle 1.2s linear infinite 0.1s;
+         animation: jiggle 1.2s linear infinite 0.1s;
       }
 
    }
 
 }
 
-@keyframes wiggle {
+@keyframes jiggle {
    25% {
       transform: scale(1.2) rotate(5deg);
    }
