@@ -1,9 +1,10 @@
 header {
-   height: 80vh;
+   height: 90vh;
    min-height: 500px;
-   max-height: 600px;
+   max-height: 800px;
    display: flex;
    align-items: center;
+   background-color: #f3f4ed;
 }
 
 .header-content {
@@ -16,7 +17,7 @@ header {
    width: 320px;
    height: 320px;
    position: relative;
-   margin-right: 100px;
+   margin: 0 100px 80px 0;
    border-radius: 10px;
    border: 3px solid #9dad7f;
    cursor: pointer;

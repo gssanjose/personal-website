@@ -235,6 +235,25 @@ html {
   overflow: hidden;
 }
 
+i {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  z-index: 3;
+}
+
+.hide-menu {
+  display: none;
+}
+
+@media (max-width: 836px) {
+  .hide-menu {
+    display: block;
+  }
+}
+
 .logo {
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
@@ -247,6 +266,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 nav {
@@ -270,6 +290,42 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+@media (max-width: 836px) {
+  nav ul {
+    height: 100vh;
+    font-size: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    padding-bottom: 250px;
+    top: 78px;
+    right: -500px;
+  }
+  nav ul li {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 836px) {
+  nav .show-menu {
+    z-index: 5;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #c7cfb7;
+  }
+  nav .show-menu li {
+    margin-bottom: 40px;
+  }
 }
 
 nav li {
@@ -319,15 +375,16 @@ nav a:hover {
 }
 
 header {
-  height: 80vh;
+  height: 90vh;
   min-height: 500px;
-  max-height: 600px;
+  max-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f3f4ed;
 }
 
 .header-content {
@@ -344,7 +401,7 @@ header {
   width: 320px;
   height: 320px;
   position: relative;
-  margin-right: 100px;
+  margin: 0 100px 80px 0;
   border-radius: 10px;
   border: 3px solid #9dad7f;
   cursor: pointer;
@@ -466,7 +523,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #f3f4ed;
+  background-color: #fff;
   margin-top: 75px;
   color: #424642;
 }

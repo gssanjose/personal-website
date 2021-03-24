@@ -11,7 +11,7 @@
 }
 
 @mixin tabletMQ {
-   @media (max-width: 800px) {
+   @media (max-width: 836px) {
       @content;
    }
 }

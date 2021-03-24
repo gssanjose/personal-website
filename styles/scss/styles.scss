@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'nav';
 @import 'header';
+@import 'main';
 
 // font-family: 'Cardo', serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -25,7 +26,7 @@ html {
 
 body {
    font-size: 1.6rem;
-   background-color: #f3f4ed;
+   background-color: #fff;
    margin-top: 75px;
    color: #424642;
 }
