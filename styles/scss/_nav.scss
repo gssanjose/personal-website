@@ -13,7 +13,6 @@
    }
 
 nav {
-
       font-size: 2rem;
       display: flex;
       justify-content: space-between;
@@ -28,27 +27,25 @@ nav {
    li {
       margin: 0 15px;
    }
-
+   
    a {
       text-decoration: none;
-      color: #435560;
+      color: #424642;
       padding: 10px 15px;
       display: inline-block;
 
       &:hover {
          animation: jiggle 1.2s linear infinite 0.1s;
       }
-
    }
-
 }
 
 @keyframes jiggle {
    25% {
-      transform: scale(1.2) rotate(5deg);
+      transform: scale(1.2) rotate(2deg);
    }
    38% {
-      transform: scale(1.2) rotate(-5deg);
+      transform: scale(1.2) rotate(-2deg);
    }
    65% {
       transform: scale(1.03) rotate(0);

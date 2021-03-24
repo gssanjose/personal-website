@@ -278,7 +278,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #435560;
+  color: #424642;
   padding: 10px 15px;
   display: inline-block;
 }
@@ -290,12 +290,12 @@ nav a:hover {
 
 @-webkit-keyframes jiggle {
   25% {
-    -webkit-transform: scale(1.2) rotate(5deg);
-            transform: scale(1.2) rotate(5deg);
+    -webkit-transform: scale(1.2) rotate(2deg);
+            transform: scale(1.2) rotate(2deg);
   }
   38% {
-    -webkit-transform: scale(1.2) rotate(-5deg);
-            transform: scale(1.2) rotate(-5deg);
+    -webkit-transform: scale(1.2) rotate(-2deg);
+            transform: scale(1.2) rotate(-2deg);
   }
   65% {
     -webkit-transform: scale(1.03) rotate(0);
@@ -305,12 +305,12 @@ nav a:hover {
 
 @keyframes jiggle {
   25% {
-    -webkit-transform: scale(1.2) rotate(5deg);
-            transform: scale(1.2) rotate(5deg);
+    -webkit-transform: scale(1.2) rotate(2deg);
+            transform: scale(1.2) rotate(2deg);
   }
   38% {
-    -webkit-transform: scale(1.2) rotate(-5deg);
-            transform: scale(1.2) rotate(-5deg);
+    -webkit-transform: scale(1.2) rotate(-2deg);
+            transform: scale(1.2) rotate(-2deg);
   }
   65% {
     -webkit-transform: scale(1.03) rotate(0);
@@ -334,9 +334,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .self-container {
@@ -353,7 +352,7 @@ header {
   transition: border 0.3s;
 }
 
-.self-container img {
+.self-container .pic {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -361,6 +360,21 @@ header {
   position: absolute;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+.self-container h3 {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-animation: bounce 1.5s linear infinite 3s;
+          animation: bounce 1.5s linear infinite 3s;
+}
+
+.self-container h3 .up-arrow {
+  position: relative;
+  top: 9px;
 }
 
 .self-container:hover, .self-container:focus {
@@ -376,13 +390,63 @@ header {
 }
 
 .name {
-  width: 60%;
-  margin: 50px 0;
+  width: 50%;
+  margin: 0 0 60px;
+}
+
+.name p {
+  width: 80%;
 }
 
 h1 {
   font-size: 6rem;
   text-shadow: 9px 9px 20px #557174;
+}
+
+@-webkit-keyframes bounce {
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .wrapper {
@@ -402,9 +466,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #f7f7e8;
+  background-color: #f3f4ed;
   margin-top: 75px;
-  color: #435560;
+  color: #424642;
 }
 
 h1,

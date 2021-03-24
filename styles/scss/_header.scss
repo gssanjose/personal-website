@@ -8,7 +8,7 @@ header {
 
 .header-content {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 
 .self-container {
@@ -22,14 +22,27 @@ header {
    cursor: pointer;
    transition: border 0.3s;
 
-   img {
+   .pic {
       display: inline-block;
       width: 100%;
       height: 100%;
       border-radius: 7px;
       position: absolute;
       transition: all 0.6s ease;
+   }
 
+   h3 {
+      position: absolute;
+      bottom: -80px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      animation: bounce 1.5s linear infinite 3s;
+
+      .up-arrow {
+         position: relative;
+         top: 9px;
+      }
    }
 
    &:hover, &:focus {
@@ -46,12 +59,33 @@ header {
 }
 
 .name {
-   width: 60%;
-   margin: 50px 0;
+   width: 50%;
+   margin: 0 0 60px;
    
+   p {
+      width: 80%;
+   }
 }
 
 h1 {
    font-size: 6rem;
    text-shadow: 9px 9px 20px #557174;
+}
+
+@keyframes bounce {
+   60% {
+      transform: translateY(0);
+   }
+   70% {
+      transform: translateY(-4px);
+   }
+   80% {
+      transform: translateY(0);
+   }
+   90% {
+      transform: translateY(4px);
+   }
+   100% {
+      transform: translateY(0);
+   }
 }
