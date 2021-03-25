@@ -12,7 +12,7 @@
 <body>
    
    <div id="menu-button" class="hide-menu">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" tabindex="0" ></i>
    </div>
 
    <div class="nav-container">
@@ -30,21 +30,70 @@
 
    <header>
       <div class="wrapper header-content">
-         <section class="self-container">
+         <section class="self-container" tabindex="0">
             <img id="self-drawing" class="shown pic" src="./images/glen-portrait.png" alt="handsome drawing of myself">
             <img id="self-pic" class="hidden pic" src="./images/glensq.jpg" alt="handsome photo of myself">
             <h3>Click Me <img class="up-arrow" src="./images/up-arrow.png" alt="arrow pointing upwards"></h3>
          </section>
          <section class="name">
             <h1>Hi, I'm Glen.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis est enim quas accusantium in. Sit vel repellat id. At.</p>
+            <p>A front-end web developer with a passion for creating entertaining and engaging user experiences.</p>
          </section>
       </div>
    </header>
 
    <main>
-      <section class="wrapper">
-         hello
+      <section class="wrapper projects" id="projects">
+         <section>
+            <div class="preview">
+               <a href="https://pokeselector.netlify.app/">
+                  <img src="./images/poke-photo.png" alt="poke selector website preview">
+               </a>
+            </div>
+            <div class="project-details">
+               <h3>
+                  <a href="https://pokeselector.netlify.app/">Poké Selector</a>
+               </h3>
+               <p>A fun and colorful Pokémon finder and generator</p>
+               <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                  <li>Rest APIs</li>
+                  <li>Pair programming</li>
+               </ul>
+               <h4>
+                  <a href="https://github.com/Glen-AllanSJ-LawrenceL/pokeSelector">See the code</a>
+               </h4>
+               <p>Developed with: <a href="https://github.com/LawrenceLCodes">Lawrence Lee</a></p>
+            </div>
+         </section>
+
+         <section class="reverse-wrap">
+            <div class="project-details">
+            <h3>
+               <a href="https://motiveboard.netlify.app/">Motivation Board</a>
+            </h3>
+            <p>A platform where users can post affirming and motivational messages for others to see and interact with</p>
+            <ul>
+               <li>HTML5</li>
+               <li>CSS3</li>
+               <li>SCSS</li>
+               <li>JavaScript</li>
+               <li>React</li>
+               <li>Firebase</li>
+            </ul>
+            <h4>
+               <a href="https://github.com/gssanjose/motive-board">See the code</a>
+            </h4>
+         </div>
+            <div class="preview">
+               <a href="https://motiveboard.netlify.app/">
+                  <img src="./images/motive-board-photo.png" alt="motivation board website preview">
+               </a>
+            </div>
+         </section>
       </section>
 
 

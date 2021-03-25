@@ -19,11 +19,19 @@ mySite.photoChange = () => {
 mySite.showNav = () => {
    const hamburger = document.querySelector('#menu-button');
    hamburger.addEventListener('click', () => {
-      if (hamburger.innerHTML.match(`<i class="fas fa-bars"></i>`)) {
-         hamburger.innerHTML = `<i class="fas fa-times"></i>`;
-      } else {
+      if (hamburger.innerHTML.match(`<i class="fas fa-times"></i>`)) {
          hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
+      } else {
+         hamburger.innerHTML = `<i class="fas fa-times"></i>`;
       }
+   // hamburger.addEventListener('keypress', (event) => {
+   //    if (event.key === 'Enter') {
+   //       if (hamburger.innerHTML.match(`<i class="fas fa-bars"></i>`)) {
+   //          hamburger.innerHTML = `<i class="fas fa-times"></i>`;
+   //       } else {
+   //          hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
+   //       }
+   //    }
    const nav = document.querySelector('#nav-menu');
    nav.classList.toggle('show-menu');
    })
