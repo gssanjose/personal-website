@@ -1,5 +1,10 @@
 .projects {
-      padding: 100px 0;
+
+   h2 {
+      font-size: 5rem;
+      padding: 80px 0;
+      text-shadow: 9px 9px 20px #557174;
+   }
 
    section {
       display: flex;
@@ -8,18 +13,39 @@
       overflow: hidden;
       box-shadow: 8px 8px 20px #557174;
       margin-bottom: 80px;
+
+      @include laptopMQ {
+         flex-direction: column;
+      }
+
+   }
+   
+   .reverse-wrap {
+      @include laptopMQ {
+         flex-direction: column-reverse;
+      }
    }
 
    div {
       width: 50%;
       overflow: hidden;
+
+      @include laptopMQ {
+         width: 100%;
+      }
    }
 
    img {
-      width: 100%;
+      width: 120%;
       height: 100%;
+      object-position: -45px;
       display: inline-block;
       transition: all 0.3s ease;
+
+      @include laptopMQ {
+         width: 100%;
+         object-position: center;
+      }
 
       &:hover {
          transform: scale(1.2);
@@ -28,10 +54,14 @@
 
    .project-details {
       padding: 20px 40px;
-      line-height: 24px;
+      line-height: 27px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      @include tabletMQ {
+         padding: 0 20px;
+      }
    }
 
    a {
@@ -59,7 +89,7 @@
    ul {
       list-style: none;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       flex-wrap: wrap;
 
       li {
@@ -69,6 +99,10 @@
          padding: 4px 7px 1px;
          border-radius: 5px;
          margin: 0 15px 20px 0;
+
+         @include mobileMQ {
+            margin: 0 7px 10px 0;
+         }
       }
    }
 

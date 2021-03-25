@@ -12,6 +12,14 @@
    width: 80vw;
    max-width: 1200px;
    margin: 0 auto;
+
+   @include tabletMQ {
+      width: 90vw;
+   }
+
+   @include mobileMQ {
+      width: 90vw;
+   }
 }
 
 body, div, section, main, nav, h1, h2, h3, p, a, ul, li, button {
@@ -22,6 +30,7 @@ body, div, section, main, nav, h1, h2, h3, p, a, ul, li, button {
 
 html {
    font-size: 62.5%;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +44,7 @@ h1,
 h2,
 h3 {
    font-family: 'Cardo', serif;
+   line-height: 40px;
 }
 
 p,

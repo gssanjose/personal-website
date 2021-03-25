@@ -8,6 +8,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
    
@@ -30,12 +32,12 @@
 
    <header>
       <div class="wrapper header-content">
-         <section class="self-container" tabindex="0">
+         <section class="self-container" tabindex="0" data-aos="fade-up" data-aos-duration="900">
             <img id="self-drawing" class="shown pic" src="./images/glen-portrait.png" alt="handsome drawing of myself">
             <img id="self-pic" class="hidden pic" src="./images/glensq.jpg" alt="handsome photo of myself">
             <h3>Click Me <img class="up-arrow" src="./images/up-arrow.png" alt="arrow pointing upwards"></h3>
          </section>
-         <section class="name">
+         <section class="name" data-aos="fade-up-left" data-aos-duration="900">
             <h1>Hi, I'm Glen.</h1>
             <p>A front-end web developer with a passion for creating entertaining and engaging user experiences.</p>
          </section>
@@ -43,34 +45,37 @@
    </header>
 
    <main>
+      
       <section class="wrapper projects" id="projects">
-         <section>
-            <div class="preview">
-               <a href="https://pokeselector.netlify.app/">
-                  <img src="./images/poke-photo.png" alt="poke selector website preview">
-               </a>
-            </div>
-            <div class="project-details">
-               <h3>
-                  <a href="https://pokeselector.netlify.app/">Poké Selector</a>
-               </h3>
-               <p>A fun and colorful Pokémon finder and generator</p>
-               <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>Rest APIs</li>
-                  <li>Pair programming</li>
-               </ul>
-               <h4>
-                  <a href="https://github.com/Glen-AllanSJ-LawrenceL/pokeSelector">See the code</a>
-               </h4>
-               <p>Developed with: <a href="https://github.com/LawrenceLCodes">Lawrence Lee</a></p>
-            </div>
-         </section>
 
-         <section class="reverse-wrap">
+         <h2 data-aos="fade-up" data-aos-duration="900">My Projects</h2>
+            <section  data-aos="fade-up" data-aos-duration="900">
+               <div class="preview">
+                  <a href="https://pokeselector.netlify.app/">
+                     <img src="./images/poke-photo.png" alt="poke selector website preview">
+                  </a>
+               </div>
+               <div class="project-details">
+                  <h3>
+                     <a href="https://pokeselector.netlify.app/">Poké Selector</a>
+                  </h3>
+                  <p>A fun and colorful Pokémon finder and generator</p>
+                  <ul>
+                     <li>HTML5</li>
+                     <li>CSS3</li>
+                     <li>SCSS</li>
+                     <li>JavaScript</li>
+                     <li>Rest APIs</li>
+                     <li>Pair programming</li>
+                  </ul>
+                  <h4>
+                     <a href="https://github.com/Glen-AllanSJ-LawrenceL/pokeSelector">See the code</a>
+                  </h4>
+                  <p>Developed with: <a href="https://github.com/LawrenceLCodes">Lawrence Lee</a></p>
+               </div>
+            </section>
+
+         <section class="reverse-wrap" data-aos="fade-up" data-aos-duration="900">
             <div class="project-details">
             <h3>
                <a href="https://motiveboard.netlify.app/">Motivation Board</a>
@@ -94,8 +99,35 @@
                </a>
             </div>
          </section>
-      </section>
 
+         <section data-aos="fade-up" data-aos-duration="900">
+            <div class="preview">
+               <a href="https://write-on.netlify.app/">
+                  <img src="./images/write-on-photo.png" alt="Write On website preview">
+               </a>
+            </div>
+            <div class="project-details">
+               <h3>
+                  <a href="https://write-on.netlify.app/">Write On</a>
+               </h3>
+               <p>A web application that gives a user a writing work space. The user can set a work timer, use a given writing prompt, and submit their own writing prompts as well</p>
+               <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>Team programming</li>
+               </ul>
+               <h4>
+                  <a href="https://github.com/BeAnGlAm">See the code</a>
+               </h4>
+               <p>Developed with: <a href="">Amy Bradford</a> <a href="">Andrew Campbell</a> <a href="">Bea Duncan</a></p>
+            </div>
+         </section>
+         
+      </section>
 
 
    </main>

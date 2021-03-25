@@ -1,17 +1,17 @@
-@mixin desktopMQ {
-   @media (min-width: 1200px) {
-      @content;
-   }
-}
-
 @mixin laptopMQ {
-   @media (max-width: 1000px) {
+   @media (max-width: 1060px) {
       @content;
    }
 }
 
 @mixin tabletMQ {
    @media (max-width: 836px) {
+      @content;
+   }
+}
+
+@mixin smallTabletMQ {
+   @media (max-width: 640px) {
       @content;
    }
 }

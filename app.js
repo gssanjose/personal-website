@@ -45,4 +45,5 @@ mySite.init = () => {
    mySite.showNav();
 }
 
+AOS.init();
 mySite.init();
