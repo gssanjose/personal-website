@@ -6,8 +6,18 @@
       cursor: pointer;
       position: fixed;
       top: 25px;
-      right: 50px;
+      right: 40px;
       z-index: 3;
+      transition: all 0.5s ease;
+
+      @include smallTabletMQ {
+         right: 30px;
+      }
+
+      &:hover,
+      &:focus {
+         color: #557174;
+      }
    }
 
    @include tabletMQ {
@@ -19,6 +29,10 @@
    font-family: 'Sacramento', cursive;
    font-size: 5rem;
    padding: 0 0 20px;
+
+   @include tabletMQ {
+      margin-left: 20px;
+   }
 }
 
    .nav-container {
@@ -51,14 +65,10 @@ nav {
          top: 78px;
          right: -500px;
          transition: all 0.6s ease;
+      }
 
-         @include smallTabletMQ {
-            padding-bottom: 450px;
-         }
-
-         li {
-            margin-bottom: 40px;
-         }
+      @include smallTabletMQ {
+         padding-bottom: 300px;
       }
    }
 
@@ -85,10 +95,12 @@ nav {
       color: #424642;
       padding: 10px 15px;
       display: inline-block;
+      transition: color 0.5s ease;
 
       &:hover,
       &:focus {
          animation: jiggle 1.2s linear infinite 0.1s;
+         color: #557174;
       }
    }
 }

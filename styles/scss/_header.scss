@@ -96,22 +96,25 @@ header {
 
    @include smallTabletMQ {
       margin-top: 20px;
-      width: 70%;
+      width: 60%;
       padding-top: 30px;
    }
 
    @include mobileMQ {
-      width: 90%;
-      margin-bottom: 30px;
-      padding-top: 20px;
+      width: 300px;
+      margin-bottom: 70px;
+      margin-top: 0;
    }
    
    p {
       margin: 20px 0;
-      width: 80%;
+      width: 90%;
 
       @include smallTabletMQ {
          margin: 10;
+         padding-left: 15px;
+         margin: 20px 0 0;
+         width: 100%;
       }
 
       @include mobileMQ {
@@ -123,6 +126,11 @@ header {
       font-size: 6rem;
       text-shadow: 9px 9px 20px #557174;
       line-height: 60px;
+
+      @include smallTabletMQ {
+         width: 300px;
+         padding-left: 15px;
+      }
    }
 }
 

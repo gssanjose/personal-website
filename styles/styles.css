@@ -244,8 +244,20 @@ html {
   cursor: pointer;
   position: fixed;
   top: 25px;
-  right: 50px;
+  right: 40px;
   z-index: 3;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 640px) {
+  .hide-menu i {
+    right: 30px;
+  }
+}
+
+.hide-menu i:hover, .hide-menu i:focus {
+  color: #557174;
 }
 
 @media (max-width: 836px) {
@@ -258,6 +270,12 @@ html {
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
   padding: 0 0 20px;
+}
+
+@media (max-width: 836px) {
+  .logo {
+    margin-left: 20px;
+  }
 }
 
 .nav-container {
@@ -312,15 +330,9 @@ nav ul {
   }
 }
 
-@media (max-width: 836px) and (max-width: 640px) {
+@media (max-width: 640px) {
   nav ul {
-    padding-bottom: 450px;
-  }
-}
-
-@media (max-width: 836px) {
-  nav ul li {
-    margin-bottom: 40px;
+    padding-bottom: 300px;
   }
 }
 
@@ -346,11 +358,14 @@ nav a {
   color: #424642;
   padding: 10px 15px;
   display: inline-block;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 nav a:hover, nav a:focus {
   -webkit-animation: jiggle 1.2s linear infinite 0.1s;
           animation: jiggle 1.2s linear infinite 0.1s;
+  color: #557174;
 }
 
 @-webkit-keyframes jiggle {
@@ -511,27 +526,30 @@ header {
 @media (max-width: 640px) {
   .name {
     margin-top: 20px;
-    width: 70%;
+    width: 60%;
     padding-top: 30px;
   }
 }
 
 @media (max-width: 450px) {
   .name {
-    width: 90%;
-    margin-bottom: 30px;
-    padding-top: 20px;
+    width: 300px;
+    margin-bottom: 70px;
+    margin-top: 0;
   }
 }
 
 .name p {
   margin: 20px 0;
-  width: 80%;
+  width: 90%;
 }
 
 @media (max-width: 640px) {
   .name p {
     margin: 10;
+    padding-left: 15px;
+    margin: 20px 0 0;
+    width: 100%;
   }
 }
 
@@ -545,6 +563,13 @@ header {
   font-size: 6rem;
   text-shadow: 9px 9px 20px #557174;
   line-height: 60px;
+}
+
+@media (max-width: 640px) {
+  .name h1 {
+    width: 300px;
+    padding-left: 15px;
+  }
 }
 
 @-webkit-keyframes bounce {
@@ -919,7 +944,7 @@ header {
 
 @media (max-width: 450px) {
   .wrapper {
-    width: 90vw;
+    width: 95vw;
   }
 }
 
