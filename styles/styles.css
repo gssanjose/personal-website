@@ -418,6 +418,11 @@ header {
   }
 }
 
+header span {
+  color: #34626c;
+  text-shadow: 3px 3px 13px #34626c;
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,6 +729,12 @@ header {
   padding: 10px 0 20px;
 }
 
+@media (max-width: 836px) {
+  .projects h3 {
+    padding-top: 27px;
+  }
+}
+
 .projects p {
   margin-bottom: 15px;
 }
@@ -969,7 +980,7 @@ h1,
 h2,
 h3 {
   font-family: 'Cardo', serif;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 h2 {
