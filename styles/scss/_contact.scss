@@ -1,6 +1,6 @@
 .contact {
    background-color: #f3f4ed;
-   padding-bottom: 150px;
+   padding-bottom: 80px;
 
    h2 {
       padding: 80px 0;
@@ -11,8 +11,20 @@
    display: flex;
    justify-content: space-between;
 
+   @include tabletMQ {
+      flex-direction: column;
+   }
+
    .my-info {
       width: 43%;
+
+      @include tabletMQ {
+         width: 80%;
+      }
+
+      @include smallTabletMQ {
+         width: 100%;
+      }
 
       h3 {
          line-height: 0;
@@ -28,6 +40,10 @@
          display: flex;
          margin: 30px 0 50px;
 
+         @include smallTabletMQ {
+            justify-content: center;
+         }
+
          li {
             margin-right: 15px;
          }
@@ -38,7 +54,7 @@
             padding: 15px 15px 10px;
             background-color: #fff;
             border-radius: 5px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
 
             &:focus,
             &:hover {
@@ -54,6 +70,14 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @include tabletMQ {
+         width: 80%;
+      }
+
+      @include smallTabletMQ {
+         width: 100%;
+      }
+
       input, textarea {
          border-radius: 5px;
          padding: 5px 10px;
@@ -64,6 +88,10 @@
          &:focus,
          &:hover {
             border-color: #6e7c7c;
+         }
+
+         @include tabletMQ {
+            margin-bottom: 15px;
          }
       }
 
@@ -78,7 +106,7 @@
          color: #435560;
          background-color: #c7cfb7;
          width: 110px;
-         padding: 10px 0 7px;
+         padding: 10px 0 6px;
          border-radius: 7px;
          border: 2px solid #9dad7f;
          transition: all 0.4s ease;
@@ -89,6 +117,5 @@
             background-color: #424642;
          }
       }
-
    }
 }

@@ -647,6 +647,10 @@ header span {
   }
 }
 
+.projects section:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1060px) {
   .projects .reverse-wrap {
     -webkit-box-orient: vertical;
@@ -780,8 +784,12 @@ header span {
   border-color: #424642;
 }
 
+.about-wrapper {
+  padding-top: 10px;
+}
+
 .about-wrapper h2 {
-  margin: 100px 0 80px;
+  margin: 80px 0 80px;
 }
 
 .about {
@@ -942,7 +950,7 @@ header span {
 
 .contact {
   background-color: #f3f4ed;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .contact h2 {
@@ -958,8 +966,29 @@ header span {
           justify-content: space-between;
 }
 
+@media (max-width: 836px) {
+  .contact-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact-section .my-info {
   width: 43%;
+}
+
+@media (max-width: 836px) {
+  .contact-section .my-info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section .my-info {
+    width: 100%;
+  }
 }
 
 .contact-section .my-info h3 {
@@ -979,6 +1008,14 @@ header span {
   margin: 30px 0 50px;
 }
 
+@media (max-width: 640px) {
+  .contact-section .my-info ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .contact-section .my-info ul li {
   margin-right: 15px;
 }
@@ -989,8 +1026,8 @@ header span {
   padding: 15px 15px 10px;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .contact-section .my-info ul a:focus, .contact-section .my-info ul a:hover {
@@ -1011,6 +1048,18 @@ header span {
           justify-content: space-between;
 }
 
+@media (max-width: 836px) {
+  .contact-section .send-message {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section .send-message {
+    width: 100%;
+  }
+}
+
 .contact-section .send-message input, .contact-section .send-message textarea {
   border-radius: 5px;
   padding: 5px 10px;
@@ -1024,6 +1073,12 @@ header span {
   border-color: #6e7c7c;
 }
 
+@media (max-width: 836px) {
+  .contact-section .send-message input, .contact-section .send-message textarea {
+    margin-bottom: 15px;
+  }
+}
+
 .contact-section .send-message textarea {
   height: 100px;
 }
@@ -1035,7 +1090,7 @@ header span {
   color: #435560;
   background-color: #c7cfb7;
   width: 110px;
-  padding: 10px 0 7px;
+  padding: 10px 0 6px;
   border-radius: 7px;
   border: 2px solid #9dad7f;
   -webkit-transition: all 0.4s ease;
@@ -1045,6 +1100,22 @@ header span {
 .contact-section .send-message button:focus, .contact-section .send-message button:hover {
   color: #fff;
   background-color: #424642;
+}
+
+footer {
+  color: #fff;
+  background-color: #424642;
+  text-align: center;
+  padding: 15px;
+}
+
+footer p:first-of-type {
+  font-size: 2rem;
+}
+
+footer p:last-child {
+  font-size: 1.6rem;
+  letter-spacing: -1px;
 }
 
 .wrapper {
