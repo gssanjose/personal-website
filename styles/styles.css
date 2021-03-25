@@ -301,7 +301,6 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,8 +719,8 @@ header span {
 }
 
 .projects a:hover, .projects a:focus {
-  color: #9dad7f;
-  border-bottom: 2px solid #9dad7f;
+  color: #5b6d5b;
+  border-bottom: 2px solid #5b6d5b;
 }
 
 .projects h3 {
@@ -740,7 +739,6 @@ header span {
 }
 
 .projects ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,7 +890,8 @@ header span {
 
 @media (max-width: 450px) {
   .about li {
-    width: 65px;
+    margin: 0 11px 25px;
+    width: 77px;
   }
 }
 
@@ -939,6 +938,113 @@ header span {
 
 .about li .fa-universal-access {
   color: #0084ff;
+}
+
+.contact {
+  background-color: #f3f4ed;
+  padding-bottom: 150px;
+}
+
+.contact h2 {
+  padding: 80px 0;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-section .my-info {
+  width: 43%;
+}
+
+.contact-section .my-info h3 {
+  line-height: 0;
+  padding-bottom: 30px;
+  text-shadow: 3px 3px 15px #34626c;
+}
+
+.contact-section .my-info p {
+  margin: 20px 0 40px;
+}
+
+.contact-section .my-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 50px;
+}
+
+.contact-section .my-info ul li {
+  margin-right: 15px;
+}
+
+.contact-section .my-info ul a {
+  color: #424642;
+  font-size: 3rem;
+  padding: 15px 15px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-section .my-info ul a:focus, .contact-section .my-info ul a:hover {
+  background-color: #c7cfb7;
+}
+
+.contact-section .send-message {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-section .send-message input, .contact-section .send-message textarea {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #9dad7f;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  resize: none;
+}
+
+.contact-section .send-message input:focus, .contact-section .send-message input:hover, .contact-section .send-message textarea:focus, .contact-section .send-message textarea:hover {
+  border-color: #6e7c7c;
+}
+
+.contact-section .send-message textarea {
+  height: 100px;
+}
+
+.contact-section .send-message button {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #435560;
+  background-color: #c7cfb7;
+  width: 110px;
+  padding: 10px 0 7px;
+  border-radius: 7px;
+  border: 2px solid #9dad7f;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact-section .send-message button:focus, .contact-section .send-message button:hover {
+  color: #fff;
+  background-color: #424642;
 }
 
 .wrapper {
@@ -991,10 +1097,16 @@ h2 {
 p,
 a,
 li,
-button {
+button,
+input,
+textarea {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
   line-height: 27px;
+}
+
+ul {
+  list-style: none;
 }

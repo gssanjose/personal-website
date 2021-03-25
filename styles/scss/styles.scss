@@ -4,6 +4,7 @@
 @import 'header';
 @import 'projects';
 @import 'about';
+@import 'contact';
 
 // font-family: 'Cardo', serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -56,10 +57,16 @@ h2 {
 p,
 a,
 li,
-button {
+button,
+input,
+textarea {
    font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
    line-height: 27px;
+}
+
+ul {
+   list-style: none;
 }
