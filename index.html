@@ -174,17 +174,17 @@
                   <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="500" aria-label="email"><a href="mailto:glen.sanjose@hotmail.ca?subject=Message from your website"><i class="fas fa-envelope-open"></i></a></li>
                </ul>
             </div>
-            <form action="" class="send-message" data-aos="fade-up" data-aos-duration="900">
+            <form name="contact" action="mailto:glen.sanjose@hotmail.ca" method="POST" data-netlify="true" enctype="multipart/form-data" class="send-message" data-aos="fade-up" data-aos-duration="900">
                <label for="user-name" class="sr-only">Name</label>
-               <input type="text" id="user-name" class="user-name" placeholder="name" required>
+               <input type="text" name="user-name" id="user-name" class="user-name" placeholder="name" required>
    
                <label for="email" class="sr-only">Email</label>
-               <input type="email" id="email" class="email" placeholder="email" required>
+               <input type="email" name="email" id="email" value="contact" class="email" placeholder="email" required>
    
                <label for="message" class="sr-only">message</label>
-               <textarea name="message" id="message" placeholder="message" required></textarea>
+               <textarea name="message" id="message" value="contact" placeholder="message" required></textarea>
    
-               <button class="send-button">Send</button>
+               <button class="send-button" type="submit">Send</button>
             </form>
          </div>
       </section>

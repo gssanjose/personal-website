@@ -4,12 +4,16 @@ footer {
    text-align: center;
    padding: 15px;
 
+   p {
+   line-height: 20px;
+   }
+
    p:first-of-type {
       font-size: 2rem;
    }
 
    p:last-child {
-      font-size: 1.6rem;
-      letter-spacing: -1px;
+      font-size: 1.7rem;
+      letter-spacing: -0.5px;
    }
 }

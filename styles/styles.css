@@ -1109,13 +1109,17 @@ footer {
   padding: 15px;
 }
 
+footer p {
+  line-height: 20px;
+}
+
 footer p:first-of-type {
   font-size: 2rem;
 }
 
 footer p:last-child {
-  font-size: 1.6rem;
-  letter-spacing: -1px;
+  font-size: 1.7rem;
+  letter-spacing: -0.5px;
 }
 
 .wrapper {
