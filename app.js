@@ -38,8 +38,6 @@ mySite.showNav = () => {
 }
 
 
-
-
 mySite.init = () => {
    mySite.photoChange();
    mySite.showNav();

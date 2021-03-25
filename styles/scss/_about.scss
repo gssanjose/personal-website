@@ -1,0 +1,51 @@
+.about-wrapper {
+   h2 {
+      margin: 100px 0 80px;
+   }
+}
+
+.about {
+   display: flex;
+
+   a {
+      text-decoration: none;
+      color: tomato;
+
+      &:hover,
+      &:focus {
+         text-decoration: underline;
+      }
+   }
+
+   div {
+      width: 50%;
+   }
+   
+   div:last-child {
+      padding-left: 50px;
+   }
+
+   p {
+      padding: 0 0 15px;
+      line-height: 29px;
+   }
+
+   ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+      margin: 0 32px 32px 0;
+
+      i {
+         font-size: 5rem;
+         padding-bottom: 9px;
+      }
+   }
+}

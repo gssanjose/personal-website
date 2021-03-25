@@ -3,6 +3,7 @@
 @import 'nav';
 @import 'header';
 @import 'projects';
+@import 'about';
 
 // font-family: 'Cardo', serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -47,9 +48,18 @@ h3 {
    line-height: 40px;
 }
 
+h2 {
+   font-size: 5rem;
+   text-shadow: 9px 9px 20px #557174;
+}
+
 p,
 a,
 li,
 button {
    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+   line-height: 27px;
 }
