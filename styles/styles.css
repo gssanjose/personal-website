@@ -385,8 +385,8 @@ nav a:hover, nav a:focus {
 
 header {
   height: 90vh;
-  min-height: 500px;
-  max-height: 800px;
+  min-height: 670px;
+  max-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +394,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f3f4ed;
+}
+
+@media (max-width: 640px) {
+  header {
+    min-height: 800px;
+    max-height: 1000px;
+  }
 }
 
 .header-content {
@@ -435,6 +442,7 @@ header {
 @media (max-width: 836px) {
   .self-container {
     margin: 0 50px 80px 0;
+    padding-bottom: 80px;
   }
 }
 
@@ -447,8 +455,8 @@ header {
 @media (max-width: 450px) {
   .self-container {
     margin: 0 0 60px 0;
-    width: 310px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -502,8 +510,9 @@ header {
 
 @media (max-width: 640px) {
   .name {
-    margin-top: 0;
+    margin-top: 20px;
     width: 70%;
+    padding-top: 30px;
   }
 }
 
@@ -511,12 +520,19 @@ header {
   .name {
     width: 90%;
     margin-bottom: 30px;
+    padding-top: 20px;
   }
 }
 
 .name p {
   margin: 20px 0;
   width: 80%;
+}
+
+@media (max-width: 640px) {
+  .name p {
+    margin: 10;
+  }
 }
 
 @media (max-width: 450px) {
@@ -738,6 +754,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 1060px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .about a {
@@ -753,13 +779,41 @@ header {
   width: 50%;
 }
 
+@media (max-width: 1060px) {
+  .about div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .about div {
+    width: 100%;
+  }
+}
+
 .about div:last-child {
-  padding-left: 50px;
+  padding-left: 30px;
+}
+
+@media (max-width: 1060px) {
+  .about div:last-child {
+    width: 100%;
+    padding: 40px 0;
+  }
 }
 
 .about p {
-  padding: 0 0 15px;
+  padding: 0 0 15px 15px;
   line-height: 29px;
+}
+
+.about p:before {
+  font-family: 'Font Awesome 5 free';
+  content: '\f0da';
+  position: relative;
+  right: 13px;
+  font-weight: 900;
+  margin-right: -7px;
 }
 
 .about ul {
@@ -769,6 +823,14 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 1060px) {
+  .about ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .about li {
@@ -786,9 +848,61 @@ header {
   margin: 0 32px 32px 0;
 }
 
+@media (max-width: 1060px) {
+  .about li {
+    margin: 0 15px 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about li {
+    width: 65px;
+  }
+}
+
 .about li i {
   font-size: 5rem;
   padding-bottom: 9px;
+}
+
+.about li .fa-html5 {
+  color: #ff6644;
+}
+
+.about li .fa-css3-alt {
+  color: #0084ff;
+}
+
+.about li .fa-sass {
+  color: #ff80c1;
+}
+
+.about li .fa-js-square {
+  color: #f6bc00;
+}
+
+.about li .devicon-jquery-plain {
+  color: #2f60b5;
+}
+
+.about li .fa-get-pocket {
+  color: #2f60ff;
+}
+
+.about li .devicon-firebase-plain {
+  color: #f69a00;
+}
+
+.about li .fa-react {
+  color: #5fb8d6;
+}
+
+.about li .fa-mobile-alt {
+  color: #ff6644;
+}
+
+.about li .fa-universal-access {
+  color: #0084ff;
 }
 
 .wrapper {

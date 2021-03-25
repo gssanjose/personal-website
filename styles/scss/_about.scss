@@ -6,6 +6,11 @@
 
 .about {
    display: flex;
+   padding-bottom: 80px;
+
+   @include laptopMQ {
+      flex-direction: column;
+   }
 
    a {
       text-decoration: none;
@@ -19,21 +24,47 @@
 
    div {
       width: 50%;
+
+      @include laptopMQ {
+         width: 80%;
+      }
+
+      @include smallTabletMQ {
+         width: 100%;
+      }
    }
    
    div:last-child {
-      padding-left: 50px;
+      padding-left: 30px;
+
+      @include laptopMQ {
+         width: 100%;
+         padding: 40px 0;
+      }
    }
 
    p {
-      padding: 0 0 15px;
+      padding: 0 0 15px 15px;
       line-height: 29px;
+
+      &:before {
+         font-family: 'Font Awesome 5 free';
+         content: '\f0da';
+         position: relative;
+         right: 13px;
+         font-weight: 900;
+         margin-right: -7px;
+      }
    }
 
    ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
+
+      @include laptopMQ {
+         justify-content: center;
+      }
    }
 
    li {
@@ -43,9 +74,48 @@
       width: 80px;
       margin: 0 32px 32px 0;
 
+      @include laptopMQ {
+         margin: 0 15px 32px;
+      }
+
+      @include mobileMQ {
+         width: 65px;
+      }
+
       i {
          font-size: 5rem;
          padding-bottom: 9px;
+      }
+
+      .fa-html5 {
+         color: #ff6644;
+      }
+      .fa-css3-alt {
+         color: #0084ff;
+      }
+      .fa-sass {
+         color: #ff80c1;
+      }
+      .fa-js-square {
+         color: #f6bc00;
+      }
+      .devicon-jquery-plain {
+         color: #2f60b5;
+      }
+      .fa-get-pocket {
+         color: #2f60ff;
+      }
+      .devicon-firebase-plain {
+         color: #f69a00;
+      }
+      .fa-react {
+         color: #5fb8d6;
+      }
+      .fa-mobile-alt {
+         color: #ff6644;
+      }
+      .fa-universal-access {
+         color: #0084ff;
       }
    }
 }
