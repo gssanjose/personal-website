@@ -1118,6 +1118,7 @@ footer p:first-of-type {
 }
 
 footer p:last-child {
+  color: #d1d1d1;
   font-size: 1.7rem;
   letter-spacing: -0.5px;
 }
