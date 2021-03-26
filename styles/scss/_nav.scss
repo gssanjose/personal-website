@@ -14,10 +14,10 @@
          right: 30px;
       }
 
-      &:hover,
-      &:focus {
-         color: #557174;
-      }
+      // &:hover,
+      // &:focus {
+      //    color: #557174;
+      // }
    }
 
    @include tabletMQ {
@@ -49,6 +49,15 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      div:nth-of-type(2) {
+
+         &:focus,
+         &:hover {
+            border: none;
+            color: #557174;
+         }
+      }
 
    ul {
       display: flex;

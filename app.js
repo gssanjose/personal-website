@@ -24,24 +24,40 @@ mySite.showNav = () => {
       } else {
          hamburger.innerHTML = `<i class="fas fa-times"></i>`;
       }
-   // hamburger.addEventListener('keypress', (event) => {
-   //    if (event.key === 'Enter') {
-   //       if (hamburger.innerHTML.match(`<i class="fas fa-bars"></i>`)) {
-   //          hamburger.innerHTML = `<i class="fas fa-times"></i>`;
-   //       } else {
-   //          hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
-   //       }
-   //    }
    const nav = document.querySelector('#nav-menu');
    nav.classList.toggle('show-menu');
    })
 }
 
-
-mySite.init = () => {
-   mySite.photoChange();
-   mySite.showNav();
+mySite.keyShowNav = () => {
+   const hamburger = document.querySelector('#menu-button');
+   hamburger.addEventListener('keypress', (event) => {
+      if (event.key == 'Enter') {
+         if (hamburger.innerHTML.match(`<i class="fas fa-times"></i>`)) {
+            hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
+         } else {
+            hamburger.innerHTML = `<i class="fas fa-times"></i>`;
+         }
+         const nav = document.querySelector('#nav-menu');
+         nav.classList.toggle('show-menu');
+      }
+   })
 }
 
-AOS.init();
+mySite.hideMenu = () => {
+   const nav = document.querySelector('#nav-menu');
+   nav.addEventListener('click', () => {
+      nav.classList.toggle('show-menu');
+   })
+}
+
+
+mySite.init = () => {
+   AOS.init();
+   mySite.photoChange();
+   mySite.showNav();
+   mySite.keyShowNav();
+   mySite.hideMenu();
+}
+
 mySite.init();

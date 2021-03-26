@@ -256,10 +256,6 @@ html {
   }
 }
 
-.hide-menu i:hover, .hide-menu i:focus {
-  color: #557174;
-}
-
 @media (max-width: 836px) {
   .hide-menu {
     display: block;
@@ -298,6 +294,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav div:nth-of-type(2):focus, nav div:nth-of-type(2):hover {
+  border: none;
+  color: #557174;
 }
 
 nav ul {
