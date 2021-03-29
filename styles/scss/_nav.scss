@@ -87,15 +87,15 @@ nav {
          right: 0;
          text-align: center;
          background-color: #c7cfb7ee;
-
-         li {
-            margin-bottom: 40px;
-         }
       }
    }
 
    li {
       margin: 0 15px;
+
+      @include tabletMQ {
+         margin-bottom: 40px;
+      }
    }
    
    a {

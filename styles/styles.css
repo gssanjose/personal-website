@@ -344,13 +344,16 @@ nav ul {
     text-align: center;
     background-color: #c7cfb7ee;
   }
-  nav .show-menu li {
-    margin-bottom: 40px;
-  }
 }
 
 nav li {
   margin: 0 15px;
+}
+
+@media (max-width: 836px) {
+  nav li {
+    margin-bottom: 40px;
+  }
 }
 
 nav a {
@@ -834,14 +837,10 @@ header span {
   }
 }
 
-.about div:last-child {
-  padding-left: 30px;
-}
-
 @media (max-width: 1060px) {
   .about div:last-child {
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 }
 
@@ -861,19 +860,17 @@ header span {
 
 .about ul {
   list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media (max-width: 1060px) {
-  .about ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about li {
@@ -888,7 +885,7 @@ header span {
       -ms-flex-align: center;
           align-items: center;
   width: 80px;
-  margin: 0 32px 32px 0;
+  margin: 0 0 32px 32px;
 }
 
 @media (max-width: 1060px) {

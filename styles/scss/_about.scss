@@ -37,11 +37,11 @@
    }
    
    div:last-child {
-      padding-left: 30px;
+      // padding-left: 30px;
 
       @include laptopMQ {
          width: 100%;
-         padding: 40px 0;
+         padding: 40px 0 0;
       }
    }
 
@@ -61,12 +61,10 @@
 
    ul {
       list-style: none;
+      justify-content: flex-end;
       display: flex;
       flex-wrap: wrap;
-
-      @include laptopMQ {
-         justify-content: center;
-      }
+      justify-content: center;
    }
 
    li {
@@ -74,7 +72,7 @@
       flex-direction: column;
       align-items: center;
       width: 80px;
-      margin: 0 32px 32px 0;
+      margin: 0 0 32px 32px;
 
       @include laptopMQ {
          margin: 0 15px 32px;
