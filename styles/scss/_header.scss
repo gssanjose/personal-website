@@ -21,6 +21,20 @@ header {
       max-height: 1000px;
    }
 
+   .intro-name {
+      position: relative;
+         &::after {
+            content: "";
+            position: absolute;
+            background-color: #D1E2C4;
+            height: 23px;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            z-index: -1;
+      }
+   }
+
    .job-title {
       position: relative;
 
@@ -55,12 +69,11 @@ header {
    margin: 0 80px 80px 0;
    border-radius: 20px;
    cursor: pointer;
-   // transition: all 0.3s;
    box-shadow: 
       0 0.3px 15px #D1E2C4,
       0 0.6px 15px #D1E2C4,
       0 0.9px 15px #D1E2C4;
-   // animation: pulse 2s linear infinite;
+   animation: bounce 3s linear infinite;
 
    @include tabletMQ {
       margin: 0 50px 80px 0;
@@ -84,20 +97,6 @@ header {
       border-radius: 20px;
       position: absolute;
       transition: all 0.5s ease;
-   }
-
-   h3 {
-      position: absolute;
-      bottom: -80px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      animation: bounce 1.5s linear infinite 3s;
-
-      .up-arrow {
-         position: relative;
-         top: 9px;
-      }
    }
 
    &:hover, 

@@ -50,22 +50,8 @@ h3 {
    position: relative;
 }
 
-h1:hover::after {
-   content: "";
-   position: absolute;
-   background-color: #D1E2C4;
-   // -webkit-box-shadow: 0 0 8px #D1E2C4;
-   // box-shadow: 0 0 8px #D1E2C4;
-   height: 22px;
-   left: 5px;
-   bottom: 0;
-   width: 100%;
-   z-index: -1;
-}
-
 h2 {
    font-size: 5rem;
-   text-shadow: 9px 9px 20px #557174;
 }
 
 p,
@@ -88,3 +74,16 @@ ul {
 a {
    position: relative;
 }
+
+// ::after {
+//    content: "";
+//    position: absolute;
+//    background-color: #D1E2C4;
+//    // -webkit-box-shadow: 0 0 8px #D1E2C4;
+//    // box-shadow: 0 0 8px #D1E2C4;
+//    height: 22px;
+//    left: 5px;
+//    bottom: 0;
+//    width: 100%;
+//    z-index: -1;
+// }

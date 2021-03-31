@@ -416,6 +416,21 @@ header {
   }
 }
 
+header .intro-name {
+  position: relative;
+}
+
+header .intro-name::after {
+  content: "";
+  position: absolute;
+  background-color: #D1E2C4;
+  height: 23px;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
 header .job-title {
   position: relative;
 }
@@ -462,6 +477,8 @@ header .job-title::after {
   cursor: pointer;
   -webkit-box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
           box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
+  -webkit-animation: bounce 3s linear infinite;
+          animation: bounce 3s linear infinite;
 }
 
 @media (max-width: 836px) {
@@ -493,21 +510,6 @@ header .job-title::after {
   position: absolute;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-.self-container h3 {
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  -webkit-animation: bounce 1.5s linear infinite 3s;
-          animation: bounce 1.5s linear infinite 3s;
-}
-
-.self-container h3 .up-arrow {
-  position: relative;
-  top: 9px;
 }
 
 .self-container:hover, .self-container:focus {
@@ -1189,20 +1191,8 @@ h3 {
   position: relative;
 }
 
-h1:hover::after {
-  content: "";
-  position: absolute;
-  background-color: #D1E2C4;
-  height: 22px;
-  left: 5px;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 h2 {
   font-size: 5rem;
-  text-shadow: 9px 9px 20px #557174;
 }
 
 p,
