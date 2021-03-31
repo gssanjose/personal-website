@@ -635,7 +635,6 @@ header span {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  border: 3px solid #9dad7f;
   overflow: hidden;
   -webkit-box-shadow: 8px 8px 20px #557174;
           box-shadow: 8px 8px 20px #557174;
@@ -1024,12 +1023,14 @@ header span {
   padding: 15px 15px 10px;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-section .my-info ul a:focus, .contact-section .my-info ul a:hover {
   background-color: #c7cfb7;
+  -webkit-box-shadow: 0 1px 10px #42464255, 0 2px 10px #42464233, 0 3px 10px #42464211;
+          box-shadow: 0 1px 10px #42464255, 0 2px 10px #42464233, 0 3px 10px #42464211;
 }
 
 .contact-section .send-message {
