@@ -246,8 +246,8 @@ html {
   top: 25px;
   right: 40px;
   z-index: 3;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 @media (max-width: 640px) {
@@ -263,7 +263,6 @@ html {
 }
 
 .logo {
-  font-family: 'Sacramento', cursive;
   font-size: 5rem;
   padding: 0 0 20px;
 }
@@ -275,7 +274,7 @@ html {
 }
 
 .nav-container {
-  background-color: #c7cfb7;
+  background-color: #EBEBE8;
   position: fixed;
   top: 0;
   left: 0;
@@ -284,7 +283,7 @@ html {
 }
 
 nav {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,8 +296,7 @@ nav {
 }
 
 nav div:nth-of-type(2):focus, nav div:nth-of-type(2):hover {
-  border: none;
-  color: #557174;
+  color: #778A35;
 }
 
 nav ul {
@@ -342,7 +340,7 @@ nav ul {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #c7cfb7ee;
+    background-color: #31352Ebb;
   }
 }
 
@@ -357,47 +355,44 @@ nav li {
 }
 
 nav a {
+  color: #31352E;
   text-decoration: none;
-  color: #424642;
+  letter-spacing: 1px;
   padding: 10px 15px;
   display: inline-block;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 nav a:hover, nav a:focus {
-  -webkit-animation: jiggle 1.2s linear infinite 0.1s;
-          animation: jiggle 1.2s linear infinite 0.1s;
-  color: #557174;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-@-webkit-keyframes jiggle {
-  25% {
-    -webkit-transform: scale(1.2) rotate(2deg);
-            transform: scale(1.2) rotate(2deg);
-  }
-  38% {
-    -webkit-transform: scale(1.2) rotate(-2deg);
-            transform: scale(1.2) rotate(-2deg);
-  }
-  65% {
-    -webkit-transform: scale(1.03) rotate(0);
-            transform: scale(1.03) rotate(0);
-  }
+nav a:hover::after, nav a:focus::after {
+  content: "";
+  position: absolute;
+  background-color: #D1E2C4;
+  height: 13px;
+  left: 15px;
+  bottom: 7px;
+  width: 70%;
+  z-index: -1;
 }
 
-@keyframes jiggle {
-  25% {
-    -webkit-transform: scale(1.2) rotate(2deg);
-            transform: scale(1.2) rotate(2deg);
+@media (max-width: 836px) {
+  nav a {
+    color: #D1E2C4;
   }
-  38% {
-    -webkit-transform: scale(1.2) rotate(-2deg);
-            transform: scale(1.2) rotate(-2deg);
-  }
-  65% {
-    -webkit-transform: scale(1.03) rotate(0);
-            transform: scale(1.03) rotate(0);
+  nav a:hover::after, nav a:focus::after {
+    content: "";
+    position: absolute;
+    background-color: #31352E;
+    height: 17px;
+    left: 15px;
+    bottom: 7px;
+    width: 80%;
+    z-index: -1;
   }
 }
 
@@ -411,7 +406,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f3f4ed;
+  background-color: #EBEBE8;
 }
 
 @media (max-width: 640px) {
@@ -421,9 +416,19 @@ header {
   }
 }
 
-header span {
-  color: #34626c;
-  text-shadow: 3px 3px 13px #34626c;
+header .job-title {
+  position: relative;
+}
+
+header .job-title::after {
+  content: "";
+  position: absolute;
+  background-color: #D1E2C4;
+  height: 10px;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  z-index: -1;
 }
 
 .header-content {
@@ -453,13 +458,10 @@ header span {
   height: 320px;
   position: relative;
   margin: 0 80px 80px 0;
-  border-radius: 10px;
-  border: 3px solid #9dad7f;
+  border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 4px 4px 13px #557174;
-          box-shadow: 4px 4px 13px #557174;
-  -webkit-transition: border 0.8s;
-  transition: border 0.8s;
+  -webkit-box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
+          box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
 }
 
 @media (max-width: 836px) {
@@ -487,10 +489,10 @@ header span {
   display: inline-block;
   width: 100%;
   height: 100%;
-  border-radius: 7px;
+  border-radius: 20px;
   position: absolute;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .self-container h3 {
@@ -509,7 +511,8 @@ header span {
 }
 
 .self-container:hover, .self-container:focus {
-  border: 3px solid #6e7c7c;
+  -webkit-box-shadow: 0 4px 15px #D1E2C4, 0 5px 15px #D1E2C4, 0 6px 15px #D1E2C4;
+          box-shadow: 0 4px 15px #D1E2C4, 0 5px 15px #D1E2C4, 0 6px 15px #D1E2C4;
 }
 
 .hidden {
@@ -569,7 +572,6 @@ header span {
 
 .name h1 {
   font-size: 6rem;
-  text-shadow: 9px 9px 20px #557174;
   line-height: 60px;
 }
 
@@ -623,6 +625,28 @@ header span {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    -webkit-box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+            box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+  }
+  100% {
+    -webkit-box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
+            box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    -webkit-box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+            box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+  }
+  100% {
+    -webkit-box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
+            box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
   }
 }
 
@@ -1151,17 +1175,29 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: #fff;
   margin-top: 75px;
-  color: #424642;
+  color: #31352E;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Cardo', serif;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 50px;
+  position: relative;
+}
+
+h1:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #D1E2C4;
+  height: 22px;
+  left: 5px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 h2 {
@@ -1175,7 +1211,7 @@ li,
 button,
 input,
 textarea {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -1184,4 +1220,8 @@ p {
 
 ul {
   list-style: none;
+}
+
+a {
+  position: relative;
 }
