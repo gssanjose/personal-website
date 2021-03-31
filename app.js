@@ -2,6 +2,8 @@ const mySite = {}
 
 mySite.hamburger = document.querySelector('#menu-button');
 const hamburger = mySite.hamburger;
+mySite.nav = document.querySelector('#nav-menu');
+const nav = mySite.nav;
 
 mySite.photoChange = () => {
    const myPhoto = document.querySelector('.self-container');
@@ -16,7 +18,6 @@ mySite.photoChange = () => {
 mySite.showNav = () => {
    mySite.hamburger.addEventListener('click', () => {
    mySite.changeIcon();
-   const nav = document.querySelector('#nav-menu');
    nav.classList.toggle('show-menu');
    })
 }
@@ -25,14 +26,12 @@ mySite.keyShowNav = () => {
    mySite.hamburger.addEventListener('keypress', (event) => {
       if (event.key == 'Enter') {
          mySite.changeIcon();
-         const nav = document.querySelector('#nav-menu');
          nav.classList.toggle('show-menu');
       }
    })
 }
 
 mySite.hideMenu = () => {
-   const nav = document.querySelector('#nav-menu');
    nav.addEventListener('click', () => {
       nav.classList.toggle('show-menu')
       mySite.changeIcon();
@@ -46,7 +45,6 @@ mySite.changeIcon = () => {
       hamburger.innerHTML = `<i class="fas fa-times"></i>`;
    }
 }
-
 
 mySite.init = () => {
    AOS.init();
