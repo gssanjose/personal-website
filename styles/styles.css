@@ -263,8 +263,36 @@ html {
 }
 
 .logo {
+  font-size: 3rem;
+  padding: 13px 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width: 836px) {
+  .logo {
+    color: #31352E;
+  }
+}
+
+.logo span {
+  display: inline-block;
+}
+
+.logo .g {
+  -webkit-transform: translateY(-20px) translateX(2px);
+          transform: translateY(-20px) translateX(2px);
+}
+
+.logo .divide {
   font-size: 5rem;
-  padding: 0 0 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #A6CFD5;
+}
+
+.logo .s {
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
 }
 
 @media (max-width: 836px) {
@@ -274,7 +302,7 @@ html {
 }
 
 .nav-container {
-  background-color: #EBEBE8;
+  background-color: #EBEBE8ee;
   position: fixed;
   top: 0;
   left: 0;
@@ -296,7 +324,7 @@ nav {
 }
 
 nav div:nth-of-type(2):focus, nav div:nth-of-type(2):hover {
-  color: #778A35;
+  color: #A6CFD5;
 }
 
 nav ul {
@@ -340,7 +368,7 @@ nav ul {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #31352Ebb;
+    background-color: #DBFCFFee;
   }
 }
 
@@ -364,32 +392,29 @@ nav a {
   transition: all 0.2s ease;
 }
 
-nav a:hover, nav a:focus {
+nav .section-link:hover, nav .section-link:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-nav a:hover::after, nav a:focus::after {
+nav .section-link:hover::after, nav .section-link:focus::after {
   content: "";
   position: absolute;
-  background-color: #D1E2C4;
+  background-color: #A6CFD5;
   height: 13px;
-  left: 15px;
+  left: 25px;
   bottom: 7px;
   width: 70%;
   z-index: -1;
 }
 
 @media (max-width: 836px) {
-  nav a {
-    color: #D1E2C4;
-  }
-  nav a:hover::after, nav a:focus::after {
+  nav .section-link:hover::after, nav .section-link:focus::after {
     content: "";
     position: absolute;
-    background-color: #31352E;
+    background-color: #A6CFD5;
     height: 17px;
-    left: 15px;
+    left: 30px;
     bottom: 7px;
     width: 80%;
     z-index: -1;
@@ -398,7 +423,7 @@ nav a:hover::after, nav a:focus::after {
 
 header {
   height: 90vh;
-  min-height: 670px;
+  min-height: 650px;
   max-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,7 +431,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #EBEBE8;
 }
 
 @media (max-width: 640px) {
@@ -423,26 +447,27 @@ header .intro-name {
 header .intro-name::after {
   content: "";
   position: absolute;
-  background-color: #D1E2C4;
-  height: 23px;
-  left: 0;
+  background-color: #A6CFD5;
+  height: 21px;
+  left: 13px;
   bottom: 10px;
-  width: 100%;
+  width: 92%;
   z-index: -1;
 }
 
 header .job-title {
   position: relative;
+  font-weight: 700;
 }
 
 header .job-title::after {
   content: "";
   position: absolute;
-  background-color: #D1E2C4;
+  background-color: #A6CFD5;
   height: 10px;
-  left: 0;
+  left: 10px;
   bottom: -3px;
-  width: 100%;
+  width: 98%;
   z-index: -1;
 }
 
@@ -475,8 +500,8 @@ header .job-title::after {
   margin: 0 80px 80px 0;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
-          box-shadow: 0 0.3px 15px #D1E2C4, 0 0.6px 15px #D1E2C4, 0 0.9px 15px #D1E2C4;
+  -webkit-box-shadow: 0 4px 11px #B5DFD6, 0 5px 11px #B5DFD6, 0 6px 11px #B5DFD6;
+          box-shadow: 0 4px 11px #B5DFD6, 0 5px 11px #B5DFD6, 0 6px 11px #B5DFD6;
   -webkit-animation: bounce 3s linear infinite;
           animation: bounce 3s linear infinite;
 }
@@ -513,8 +538,8 @@ header .job-title::after {
 }
 
 .self-container:hover, .self-container:focus {
-  -webkit-box-shadow: 0 4px 15px #D1E2C4, 0 5px 15px #D1E2C4, 0 6px 15px #D1E2C4;
-          box-shadow: 0 4px 15px #D1E2C4, 0 5px 15px #D1E2C4, 0 6px 15px #D1E2C4;
+  -webkit-box-shadow: 0 0.8px 11px #B5DFD6, 0 1.1px 11px #B5DFD6, 0 1.4px 11px #B5DFD6;
+          box-shadow: 0 0.8px 11px #B5DFD6, 0 1.1px 11px #B5DFD6, 0 1.4px 11px #B5DFD6;
 }
 
 .hidden {
@@ -632,39 +657,51 @@ header .job-title::after {
 
 @-webkit-keyframes pulse {
   50% {
-    -webkit-box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
-            box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+    -webkit-box-shadow: 0 4px 15px 4px #B5DFD6, 0 6px 15px 4px #B5DFD6, 0 8px 15px 4px #B5DFD6;
+            box-shadow: 0 4px 15px 4px #B5DFD6, 0 6px 15px 4px #B5DFD6, 0 8px 15px 4px #B5DFD6;
   }
   100% {
-    -webkit-box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
-            box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
+    -webkit-box-shadow: 0 0.3px 15px 4px #B5DFD6, 0 0.6px 15px 4px #B5DFD6, 0 0.9px 15px 4px #B5DFD6;
+            box-shadow: 0 0.3px 15px 4px #B5DFD6, 0 0.6px 15px 4px #B5DFD6, 0 0.9px 15px 4px #B5DFD6;
   }
 }
 
 @keyframes pulse {
   50% {
-    -webkit-box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
-            box-shadow: 0 4px 15px 4px #D1E2C4, 0 6px 15px 4px #D1E2C4, 0 8px 15px 4px #D1E2C4;
+    -webkit-box-shadow: 0 4px 15px 4px #B5DFD6, 0 6px 15px 4px #B5DFD6, 0 8px 15px 4px #B5DFD6;
+            box-shadow: 0 4px 15px 4px #B5DFD6, 0 6px 15px 4px #B5DFD6, 0 8px 15px 4px #B5DFD6;
   }
   100% {
-    -webkit-box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
-            box-shadow: 0 0.3px 15px 4px #D1E2C4, 0 0.6px 15px 4px #D1E2C4, 0 0.9px 15px 4px #D1E2C4;
+    -webkit-box-shadow: 0 0.3px 15px 4px #B5DFD6, 0 0.6px 15px 4px #B5DFD6, 0 0.9px 15px 4px #B5DFD6;
+            box-shadow: 0 0.3px 15px 4px #B5DFD6, 0 0.6px 15px 4px #B5DFD6, 0 0.9px 15px 4px #B5DFD6;
   }
 }
 
 .projects h2 {
   padding: 100px 0;
+  position: relative;
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  background-color: #A6CFD5;
+  height: 21px;
+  left: 18px;
+  bottom: 98px;
+  width: 265px;
+  z-index: -1;
 }
 
 .projects section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 80px;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-box-shadow: 8px 8px 20px #557174;
-          box-shadow: 8px 8px 20px #557174;
-  margin-bottom: 80px;
+  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.034), 0 6.5px 5px rgba(0, 0, 0, 0.048), 0 12px 10px rgba(0, 0, 0, 0.06), 0 22px 18px rgba(0, 0, 0, 0.072);
+          box-shadow: 0 3px 2px rgba(0, 0, 0, 0.034), 0 6.5px 5px rgba(0, 0, 0, 0.048), 0 12px 10px rgba(0, 0, 0, 0.06), 0 22px 18px rgba(0, 0, 0, 0.072);
 }
 
 @media (max-width: 1060px) {
@@ -745,15 +782,15 @@ header .job-title::after {
 
 .projects a {
   text-decoration: none;
-  color: #435560;
+  color: #31352E;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-bottom: 2px solid #fff;
 }
 
 .projects a:hover, .projects a:focus {
-  color: #5b6d5b;
-  border-bottom: 2px solid #5b6d5b;
+  color: #A6CFD5;
+  border-bottom: 2px solid #A6CFD5;
 }
 
 .projects h3 {
@@ -784,9 +821,9 @@ header .job-title::after {
 
 .projects ul li {
   font-size: 1.6rem;
-  color: #435560;
-  background-color: #ffc93c;
-  padding: 4px 7px 1px;
+  color: #31352E;
+  background-color: #DBFCFF;
+  padding: 4px 7px 3px;
   border-radius: 5px;
   margin: 0 15px 20px 0;
 }
@@ -798,19 +835,19 @@ header .job-title::after {
 }
 
 .projects h4 a {
-  color: #f7f7e8;
-  background-color: #424642;
+  color: #fff;
+  background-color: #31352E;
   width: 170px;
   text-align: center;
-  padding: 8px 10px 5px;
+  padding: 8px 10px 7px;
   border-radius: 10px;
-  border: 2px solid #9dad7f;
+  border: 2px solid #31352E;
 }
 
 .projects h4 a:hover, .projects h4 a:focus {
-  color: #424642;
-  background-color: #f7f7e8;
-  border-color: #424642;
+  color: #31352E;
+  background-color: #fff;
+  border-color: #31352E;
 }
 
 .about-wrapper {
@@ -819,6 +856,17 @@ header .job-title::after {
 
 .about-wrapper h2 {
   margin: 80px 0 80px;
+}
+
+.about-wrapper h2::after {
+  content: "";
+  position: absolute;
+  background-color: #A6CFD5;
+  height: 21px;
+  left: 18px;
+  bottom: 0px;
+  width: 222px;
+  z-index: -1;
 }
 
 .about {
@@ -972,12 +1020,23 @@ header .job-title::after {
 }
 
 .contact {
-  background-color: #f3f4ed;
+  background-color: #EBEBE8;
   padding-bottom: 80px;
 }
 
 .contact h2 {
   padding: 80px 0;
+}
+
+.contact h2::after {
+  content: "";
+  position: absolute;
+  background-color: #A6CFD5;
+  height: 23px;
+  left: 18px;
+  bottom: 75px;
+  width: 175px;
+  z-index: -1;
 }
 
 .contact-section {
@@ -1017,7 +1076,17 @@ header .job-title::after {
 .contact-section .my-info h3 {
   line-height: 0;
   padding-bottom: 30px;
-  text-shadow: 3px 3px 15px #34626c;
+}
+
+.contact-section .my-info h3::after {
+  content: "";
+  position: absolute;
+  background-color: #A6CFD5;
+  height: 15px;
+  left: 9px;
+  bottom: 15px;
+  width: 90px;
+  z-index: -1;
 }
 
 .contact-section .my-info p {
@@ -1044,7 +1113,7 @@ header .job-title::after {
 }
 
 .contact-section .my-info ul a {
-  color: #424642;
+  color: #31352E;
   font-size: 3rem;
   padding: 15px 15px 10px;
   background-color: #fff;
@@ -1054,9 +1123,9 @@ header .job-title::after {
 }
 
 .contact-section .my-info ul a:focus, .contact-section .my-info ul a:hover {
-  background-color: #c7cfb7;
-  -webkit-box-shadow: 0 1px 10px #42464255, 0 2px 10px #42464233, 0 3px 10px #42464211;
-          box-shadow: 0 1px 10px #42464255, 0 2px 10px #42464233, 0 3px 10px #42464211;
+  background-color: #A6CFD5;
+  -webkit-box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
+          box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
 }
 
 .contact-section .send-message {
@@ -1088,7 +1157,7 @@ header .job-title::after {
 .contact-section .send-message input, .contact-section .send-message textarea {
   border-radius: 5px;
   padding: 5px 10px;
-  border: 2px solid #9dad7f;
+  border: 2px solid #A6CFD5;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
   resize: none;
@@ -1112,19 +1181,21 @@ header .job-title::after {
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #435560;
-  background-color: #c7cfb7;
   width: 110px;
-  padding: 10px 0 6px;
+  padding: 8px 0 6px;
   border-radius: 7px;
-  border: 2px solid #9dad7f;
+  border: 2px solid #A6CFD5;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  color: #fff;
+  background-color: #31352E;
+  border: 2px solid #31352E;
 }
 
 .contact-section .send-message button:focus, .contact-section .send-message button:hover {
-  color: #fff;
-  background-color: #424642;
+  color: #31352E;
+  background-color: #fff;
+  border-color: #31352E;
 }
 
 footer {
@@ -1206,6 +1277,7 @@ textarea {
 
 p {
   line-height: 27px;
+  letter-spacing: 1px;
 }
 
 ul {

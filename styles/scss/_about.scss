@@ -3,6 +3,17 @@
 
    h2 {
       margin: 80px 0 80px;
+      
+      &::after {
+         content: "";
+         position: absolute;
+         background-color: #A6CFD5;
+         height: 21px;
+         left: 18px;
+         bottom: 0px;
+         width: 222px;
+         z-index: -1;
+      }
    }
 }
 

@@ -10,11 +10,11 @@
 
 header {
    height: 90vh;
-   min-height: 670px;
+   min-height: 650px;
    max-height: 900px;
    display: flex;
    align-items: center;
-   background-color: #EBEBE8;
+   // background-color: #DBFCFF;
 
    @include smallTabletMQ {
       min-height: 800px;
@@ -26,26 +26,27 @@ header {
          &::after {
             content: "";
             position: absolute;
-            background-color: #D1E2C4;
-            height: 23px;
-            left: 0;
+            background-color: #A6CFD5;
+            height: 21px;
+            left: 13px;
             bottom: 10px;
-            width: 100%;
+            width: 92%;
             z-index: -1;
       }
    }
 
    .job-title {
       position: relative;
+      font-weight: 700;
 
       &::after {
          content: "";
          position: absolute;
-         background-color: #D1E2C4;
+         background-color: #A6CFD5;
          height: 10px;
-         left: 0;
+         left: 10px;
          bottom: -3px;
-         width: 100%;
+         width: 98%;
          z-index: -1;
       }
    }
@@ -70,9 +71,10 @@ header {
    border-radius: 20px;
    cursor: pointer;
    box-shadow: 
-      0 0.3px 15px #D1E2C4,
-      0 0.6px 15px #D1E2C4,
-      0 0.9px 15px #D1E2C4;
+      0 4px 11px #B5DFD6,
+      0 5px 11px #B5DFD6,
+      0 6px 11px #B5DFD6;;
+
    animation: bounce 3s linear infinite;
 
    @include tabletMQ {
@@ -102,9 +104,9 @@ header {
    &:hover, 
    &:focus {
       box-shadow:      
-      0 4px 15px #D1E2C4,
-      0 5px 15px #D1E2C4,
-      0 6px 15px #D1E2C4;;
+      0 0.8px 11px #B5DFD6,
+      0 1.1px 11px #B5DFD6,
+      0 1.4px 11px #B5DFD6;
    }
 }
 
@@ -154,7 +156,6 @@ header {
 
    h1 {
       font-size: 6rem;
-      // text-shadow: 0 15px 30px #778A35;
       line-height: 60px;
 
       @include smallTabletMQ {
@@ -185,14 +186,14 @@ header {
 @keyframes pulse {
    50% {
       box-shadow: 
-      0 4px 15px 4px #D1E2C4,
-      0 6px 15px 4px #D1E2C4,
-      0 8px 15px 4px #D1E2C4;
+      0 4px 15px 4px #B5DFD6,
+      0 6px 15px 4px #B5DFD6,
+      0 8px 15px 4px #B5DFD6;
    }
    100% {
       box-shadow: 
-      0 0.3px 15px 4px #D1E2C4,
-      0 0.6px 15px 4px #D1E2C4,
-      0 0.9px 15px 4px #D1E2C4;
+      0 0.3px 15px 4px #B5DFD6,
+      0 0.6px 15px 4px #B5DFD6,
+      0 0.9px 15px 4px #B5DFD6;
    }
 }

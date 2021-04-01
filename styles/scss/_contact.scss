@@ -1,9 +1,20 @@
 .contact {
-   background-color: #f3f4ed;
+   background-color: #EBEBE8;
    padding-bottom: 80px;
 
    h2 {
       padding: 80px 0;
+
+      &::after {
+         content: "";
+         position: absolute;
+         background-color: #A6CFD5;
+         height: 23px;
+         left: 18px;
+         bottom: 75px;
+         width: 175px;
+         z-index: -1;
+      }
    }
 }
 
@@ -29,7 +40,17 @@
       h3 {
          line-height: 0;
          padding-bottom: 30px;
-         text-shadow: 3px 3px 15px #34626c;
+
+         &::after {
+            content: "";
+            position: absolute;
+            background-color: #A6CFD5;
+            height: 15px;
+            left: 9px;
+            bottom: 15px;
+            width: 90px;
+            z-index: -1;
+         }
       }
 
       p {
@@ -49,7 +70,7 @@
          }
 
          a {
-            color: #424642;
+            color: #31352E;
             font-size: 3rem;
             padding: 15px 15px 10px;
             background-color: #fff;
@@ -58,8 +79,8 @@
 
             &:focus,
             &:hover {
-               background-color: #c7cfb7;
-               box-shadow: 0 1px 10px #42464255, 0 2px 10px #42464233, 0 3px 10px #42464211;
+               background-color: #A6CFD5;
+               box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
             }
          }
       }
@@ -82,7 +103,7 @@
       input, textarea {
          border-radius: 5px;
          padding: 5px 10px;
-         border: 2px solid #9dad7f;
+         border: 2px solid #A6CFD5;
          transition: border 0.3s ease;
          resize: none;
 
@@ -104,18 +125,22 @@
          cursor: pointer;
          font-weight: 700;
          letter-spacing: 2px;
-         color: #435560;
-         background-color: #c7cfb7;
          width: 110px;
-         padding: 10px 0 6px;
+         padding: 8px 0 6px;
          border-radius: 7px;
-         border: 2px solid #9dad7f;
+         border: 2px solid #A6CFD5;
          transition: all 0.4s ease;
+
+         
+         color: #fff;
+         background-color: #31352E;
+         border: 2px solid #31352E;
 
          &:focus,
          &:hover {
-            color: #fff;
-            background-color: #424642;
+            color: #31352E;
+            background-color: #fff;
+            border-color: #31352E;
          }
       }
    }
