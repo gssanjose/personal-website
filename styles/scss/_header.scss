@@ -71,9 +71,9 @@ header {
    border-radius: 20px;
    cursor: pointer;
    box-shadow: 
-      0 4px 11px #B5DFD6,
-      0 5px 11px #B5DFD6,
-      0 6px 11px #B5DFD6;;
+      0 4px 11px #A6CFD5,
+      0 5px 11px #A6CFD5,
+      0 6px 11px #A6CFD5;;
 
    animation: bounce 3s linear infinite;
 
@@ -104,9 +104,9 @@ header {
    &:hover, 
    &:focus {
       box-shadow:      
-      0 0.8px 11px #B5DFD6,
-      0 1.1px 11px #B5DFD6,
-      0 1.4px 11px #B5DFD6;
+      0 0.8px 11px #A6CFD5,
+      0 1.1px 11px #A6CFD5,
+      0 1.4px 11px #A6CFD5;
    }
 }
 
@@ -186,14 +186,14 @@ header {
 @keyframes pulse {
    50% {
       box-shadow: 
-      0 4px 15px 4px #B5DFD6,
-      0 6px 15px 4px #B5DFD6,
-      0 8px 15px 4px #B5DFD6;
+      0 4px 15px 4px #A6CFD5,
+      0 6px 15px 4px #A6CFD5,
+      0 8px 15px 4px #A6CFD5;
    }
    100% {
       box-shadow: 
-      0 0.3px 15px 4px #B5DFD6,
-      0 0.6px 15px 4px #B5DFD6,
-      0 0.9px 15px 4px #B5DFD6;
+      0 0.3px 15px 4px #A6CFD5,
+      0 0.6px 15px 4px #A6CFD5,
+      0 0.9px 15px 4px #A6CFD5;
    }
 }
