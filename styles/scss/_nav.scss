@@ -134,9 +134,9 @@ nav {
             position: absolute;
             background-color: #A6CFD5;
             height: 13px;
-            left: 13px;
+            left: 11px;
             bottom: 7px;
-            width: 75%;
+            width: 78%;
             z-index: -1;
          }
       }
@@ -155,6 +155,17 @@ nav {
                width: 85%;
                z-index: -1;
             }
+         }
+      }
+   }
+
+   ul .about-link {
+
+      &:hover,
+      &:focus {
+         &::after {
+            width: 76%;
+            left: 10px;
          }
       }
    }

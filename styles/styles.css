@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -402,9 +393,9 @@ nav .section-link:hover::after, nav .section-link:focus::after {
   position: absolute;
   background-color: #A6CFD5;
   height: 13px;
-  left: 13px;
+  left: 11px;
   bottom: 7px;
-  width: 75%;
+  width: 78%;
   z-index: -1;
 }
 
@@ -419,6 +410,11 @@ nav .section-link:hover::after, nav .section-link:focus::after {
     width: 85%;
     z-index: -1;
   }
+}
+
+nav ul .about-link:hover::after, nav ul .about-link:focus::after {
+  width: 76%;
+  left: 10px;
 }
 
 header {
@@ -864,7 +860,7 @@ header .job-title::after {
 }
 
 .about {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .about .about-me {
@@ -968,12 +964,13 @@ header .job-title::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 10px;
+  margin: 0 10px 60px;
   width: 90px;
 }
 
 @media (max-width: 640px) {
   .about li {
+    margin-bottom: 40px;
     width: 80px;
   }
 }
