@@ -17,12 +17,75 @@
    }
 }
 
+.self-container {
+   flex-shrink: 0;
+   width: 320px;
+   height: 320px;
+   border-radius: 20px;
+   cursor: pointer;
+   box-shadow: 
+      0 4px 11px #A6CFD5,
+      0 5px 11px #A6CFD5,
+      0 6px 11px #A6CFD5;;
+
+   animation: bounce 3s linear infinite;
+
+   @include tabletMQ {
+      margin-bottom: 60px;
+   }
+
+   @include mobileMQ {
+      width: 300px;
+      height: 300px;
+   }
+
+   .pic {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      position: absolute;
+      transition: all 0.5s ease;
+   }
+
+   &:hover, 
+   &:focus {
+      box-shadow:      
+      0 0.8px 11px #A6CFD5,
+      0 1.1px 11px #A6CFD5,
+      0 1.4px 11px #A6CFD5;
+   }
+}
+
 .about {
-   display: flex;
    padding-bottom: 80px;
 
-   @include laptopMQ {
-      flex-direction: column;
+   .about-me {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 60px;
+      align-items: center;
+
+      div {
+         width: 60%;
+
+         @include laptopMQ {
+            width: 50%;
+         }
+
+         @include tabletMQ {
+            width: 80%;
+            margin: 0 auto;
+         }
+
+         @include smallTabletMQ {
+            width: 100%;
+         }
+      }
+
+      @include tabletMQ {
+         flex-direction: column-reverse;
+      }
    }
 
    a {
@@ -34,26 +97,9 @@
          text-decoration: underline;
       }
    }
-
-   div {
-      width: 50%;
-
-      @include laptopMQ {
-         width: 80%;
-      }
-
-      @include smallTabletMQ {
-         width: 100%;
-      }
-   }
    
    div:last-child {
-      // padding-left: 30px;
-
-      @include laptopMQ {
-         width: 100%;
-         padding: 40px 0 0;
-      }
+      width: 100%;
    }
 
    p {
@@ -72,31 +118,25 @@
 
    ul {
       list-style: none;
-      justify-content: flex-end;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
    }
 
    li {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 80px;
-      margin: 0 0 32px 32px;
+      margin: 15px 10px;
+      width: 90px;
 
-      @include laptopMQ {
-         margin: 0 15px 32px;
-      }
-
-      @include mobileMQ {
-         margin: 0 11px 25px;
-         width: 77px;
+      @include smallTabletMQ {
+         width: 80px;
       }
 
       i {
-         font-size: 5rem;
-         padding-bottom: 9px;
+         font-size: 6rem;
+         padding-bottom: 15px;
       }
 
       .fa-html5 {
