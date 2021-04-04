@@ -9,9 +9,9 @@
          position: absolute;
          background-color: #A6CFD5;
          height: 21px;
-         left: 18px;
+         left: -6px;
          bottom: 0px;
-         width: 222px;
+         width: 237px;
          z-index: -1;
       }
    }
@@ -26,9 +26,12 @@
    box-shadow: 
       0 4px 11px #A6CFD5,
       0 5px 11px #A6CFD5,
-      0 6px 11px #A6CFD5;;
-
+      0 6px 11px #A6CFD5;
    animation: bounce 3s linear infinite;
+
+   @include laptopMQ {
+      margin-bottom: 40px;
+   }
 
    @include tabletMQ {
       margin-bottom: 60px;
@@ -63,8 +66,12 @@
    .about-me {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 60px;
+      padding-bottom: 80px;
       align-items: center;
+
+      @include laptopMQ {
+         padding-bottom: 30px;
+      }
 
       div {
          width: 60%;
