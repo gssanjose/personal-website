@@ -10,16 +10,10 @@
 
 header {
    height: 90vh;
-   min-height: 650px;
-   max-height: 900px;
+   min-height: 600px;
+   max-height: 800px;
    display: flex;
    align-items: center;
-   // background-color: #DBFCFF;
-
-   @include smallTabletMQ {
-      min-height: 800px;
-      max-height: 1000px;
-   }
 
    .intro-name {
       position: relative;
@@ -28,9 +22,9 @@ header {
             position: absolute;
             background-color: #A6CFD5;
             height: 21px;
-            left: 13px;
+            left: -3px;
             bottom: 10px;
-            width: 92%;
+            width: 104%;
             z-index: -1;
       }
    }
@@ -44,9 +38,9 @@ header {
          position: absolute;
          background-color: #A6CFD5;
          height: 10px;
-         left: 10px;
+         left: -3px;
          bottom: -3px;
-         width: 98%;
+         width: 102%;
          z-index: -1;
       }
    }
@@ -55,54 +49,22 @@ header {
 .header-content {
    display: flex;
    justify-content: space-around;
-
-   @include smallTabletMQ {
-      flex-direction: column-reverse;
-      align-items: center;
-   }
-}
-
-.hidden {
-   opacity: 0;
-}
-
-.shown {
-   opacity: 1;
 }
 
 .name {
-   width: 40%;
-   margin: 50px 0 60px;
-
-   @include tabletMQ {
-      margin-top: 10px;
-   }
+   width: 340px;
 
    @include smallTabletMQ {
-      margin-top: 20px;
-      width: 60%;
-      padding-top: 30px;
-   }
-
-   @include mobileMQ {
-      width: 300px;
-      margin-bottom: 70px;
-      margin-top: 0;
+      width: 280px;
    }
    
    p {
       margin: 20px 0;
-      width: 90%;
+      padding-left: 5px;
 
       @include smallTabletMQ {
          margin: 10;
-         padding-left: 15px;
          margin: 20px 0 0;
-         width: 100%;
-      }
-
-      @include mobileMQ {
-         width: 90%;
       }
    }
 
@@ -111,27 +73,8 @@ header {
       line-height: 60px;
 
       @include smallTabletMQ {
-         width: 300px;
-         padding-left: 15px;
+         font-size: 5rem;
       }
-   }
-}
-
-@keyframes bounce {
-   60% {
-      transform: translateY(0);
-   }
-   70% {
-      transform: translateY(-4px);
-   }
-   80% {
-      transform: translateY(0);
-   }
-   90% {
-      transform: translateY(4px);
-   }
-   100% {
-      transform: translateY(0);
    }
 }
 

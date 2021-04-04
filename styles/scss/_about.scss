@@ -11,7 +11,7 @@
          height: 21px;
          left: -6px;
          bottom: 0px;
-         width: 237px;
+         width: 238px;
          z-index: -1;
       }
    }
@@ -58,6 +58,14 @@
       0 1.1px 11px #A6CFD5,
       0 1.4px 11px #A6CFD5;
    }
+}
+
+.hidden {
+   opacity: 0;
+}
+
+.shown {
+   opacity: 1;
 }
 
 .about {
@@ -177,5 +185,23 @@
       .fa-universal-access {
          color: #0084ff;
       }
+   }
+}
+
+@keyframes bounce {
+   60% {
+      transform: translateY(0);
+   }
+   70% {
+      transform: translateY(-4px);
+   }
+   80% {
+      transform: translateY(0);
+   }
+   90% {
+      transform: translateY(4px);
+   }
+   100% {
+      transform: translateY(0);
    }
 }
