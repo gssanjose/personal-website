@@ -35,9 +35,9 @@ header {
 
 .name {
    position: absolute;
-   top: 23%;
-   left: 30%;
-   // transform: translate(-50%, -50%);
+   top: 20%;
+   left: 35%;
+   transform: translate(-50%, -50%);
 }
 
 .main-heading {
@@ -68,4 +68,18 @@ header {
    //    width: 102%;
    //    z-index: -1;
    // }
+}
+
+@keyframes moveInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+   80% {
+      transform: translateX(10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
 }
