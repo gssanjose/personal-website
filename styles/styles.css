@@ -707,7 +707,7 @@ header .job-title::after {
   background-color: #A6CFD5;
   height: 21px;
   left: -6px;
-  bottom: 0px;
+  bottom: -2px;
   width: 238px;
   z-index: -1;
 }
