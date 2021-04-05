@@ -9,86 +9,63 @@
 // }
 
 header {
-   height: 90vh;
+   height: 95vh;
    min-height: 600px;
-   max-height: 800px;
-   display: flex;
-   align-items: center;
+   background-image: linear-gradient(
+      to right bottom, 
+      rgba(166, 207, 213, 0.705), 
+      rgba(219, 252, 255, 0.705)), 
+      url(../images/mac.jpg);
+   background-size: cover;
+   background-position: top;
+   position: relative;
 
-   .intro-name {
-      position: relative;
-         &::after {
-            content: "";
-            position: absolute;
-            background-color: #A6CFD5;
-            height: 21px;
-            left: -3px;
-            bottom: 10px;
-            width: 104%;
-            z-index: -1;
-      }
-   }
-
-   .job-title {
-      position: relative;
-      font-weight: 700;
-
-      &::after {
-         content: "";
-         position: absolute;
-         background-color: #A6CFD5;
-         height: 10px;
-         left: -3px;
-         bottom: -3px;
-         width: 102%;
-         z-index: -1;
-      }
-   }
-}
-
-.header-content {
-   display: flex;
-   justify-content: space-around;
+   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      //    &::after {
+      //       content: "";
+      //       position: absolute;
+      //       background-color: #A6CFD5;
+      //       height: 21px;
+      //       left: -3px;
+      //       bottom: 10px;
+      //       width: 104%;
+      //       z-index: -1;
+      // }
 }
 
 .name {
-   width: 340px;
-
-   @include smallTabletMQ {
-      width: 280px;
-   }
-   
-   p {
-      margin: 20px 0;
-      padding-left: 5px;
-
-      @include smallTabletMQ {
-         margin: 10;
-         margin: 20px 0 0;
-      }
-   }
-
-   h1 {
-      font-size: 6rem;
-      line-height: 60px;
-
-      @include smallTabletMQ {
-         font-size: 5rem;
-      }
-   }
+   position: absolute;
+   top: 23%;
+   left: 30%;
+   // transform: translate(-50%, -50%);
 }
 
-@keyframes pulse {
-   50% {
-      box-shadow: 
-      0 4px 15px 4px #A6CFD5,
-      0 6px 15px 4px #A6CFD5,
-      0 8px 15px 4px #A6CFD5;
-   }
-   100% {
-      box-shadow: 
-      0 0.3px 15px 4px #A6CFD5,
-      0 0.6px 15px 4px #A6CFD5,
-      0 0.9px 15px 4px #A6CFD5;
-   }
+.main-heading {
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.intro-name {
+   display: block;
+   font-size: 6rem;
+   font-weight: 400;
+   letter-spacing: 35px;
+}
+
+.job-title {
+   display: block;
+   font-size: 2rem;
+   font-weight: 700;
+   letter-spacing: 17px;
+
+   // &::after {
+   //    content: "";
+   //    position: absolute;
+   //    background-color: #A6CFD5;
+   //    height: 10px;
+   //    left: -3px;
+   //    bottom: -3px;
+   //    width: 102%;
+   //    z-index: -1;
+   // }
 }
