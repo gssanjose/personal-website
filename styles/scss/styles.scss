@@ -24,7 +24,7 @@
    }
 }
 
-body, div, section, main, nav, h1, h2, h3, p, a, ul, li, button {
+body, div, section, main, nav, h1, h2, h3, p, a, ul, li, button, span {
    margin: 0;
    padding: 0;
 } 
@@ -38,7 +38,6 @@ html {
 body {
    font-size: 1.6rem;
    background-color: #fff;
-   margin-top: 75px;
    color: #31352E;
 }
 
