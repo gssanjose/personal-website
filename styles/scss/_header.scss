@@ -13,8 +13,8 @@ header {
    min-height: 600px;
    background-image: linear-gradient(
       to right bottom, 
-      rgba(166, 207, 213, 0.705), 
-      rgba(219, 252, 255, 0.705)), 
+      rgba(166, 207, 213, 0.801), 
+      rgba(219, 252, 255, 0.801)), 
       url(../images/mac.jpg);
    background-size: cover;
    background-position: top;
@@ -34,15 +34,17 @@ header {
 }
 
 .name {
-   position: absolute;
-   top: 20%;
-   left: 35%;
-   transform: translate(-50%, -50%);
+   // position: absolute;
+   // top: 20%;
+   // left: 35%;
+   // transform: translate(-50%, -50%);
 }
 
 .main-heading {
    color: #fff;
    text-transform: uppercase;
+   position: absolute;
+   top: 20%;
 }
 
 .intro-name {
