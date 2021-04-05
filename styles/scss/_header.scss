@@ -13,14 +13,14 @@ header {
    min-height: 600px;
    background-image: linear-gradient(
       to right bottom, 
-      rgba(166, 207, 213, 0.801), 
-      rgba(219, 252, 255, 0.801)), 
+      rgba(28, 93, 121, 0.801),
+      rgba(130, 217, 255, 0.801)), 
       url(../images/mac.jpg);
    background-size: cover;
    background-position: top;
    position: relative;
 
-   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
       //    &::after {
       //       content: "";
       //       position: absolute;
@@ -44,21 +44,21 @@ header {
    color: #fff;
    text-transform: uppercase;
    position: absolute;
-   top: 20%;
+   top: 17%;
 }
 
 .intro-name {
    display: block;
    font-size: 6rem;
    font-weight: 400;
-   letter-spacing: 35px;
+   letter-spacing: 30px;
 }
 
 .job-title {
    display: block;
    font-size: 2rem;
    font-weight: 700;
-   letter-spacing: 17px;
+   letter-spacing: 14px;
 
    // &::after {
    //    content: "";
