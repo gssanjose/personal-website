@@ -4,9 +4,9 @@
       cursor: pointer;
       position: fixed;
       padding: 12px 15px 10px;
-      // border-radius: 50%;
-      background-color: #EBEBE8aa;
-      // border: 1px solid #31352E;
+      color: #418db9e0;
+      background-color: #fff;
+      // background-color: #EBEBE8aa;
       top: 20px;
       right: 20px;
       z-index: 10;
@@ -14,7 +14,8 @@
 
       &:hover,
       &:focus {
-         color: #418db9e0;
+         scale: 1.05;
+         box-shadow: 0 3px 10px #31352E;
       }
    }
 
@@ -31,11 +32,18 @@
    font-size: 3rem;
    padding: 13px 0;
    font-family: 'Nunito Sans', sans-serif;
-   // border: 1px solid #31352E;
    padding: 0 5px 4px 11px;
    border-radius: 50%;
    color: #31352E;
-   background-color: #EBEBE8aa;
+   background-color: #ffffffee;
+   // border: 1px solid #31352E;
+   // background-color: #EBEBE8aa;
+
+   &:hover,
+   &:focus {
+      scale: 1.05;
+      box-shadow: 0 3px 10px #31352E;
+   }
 
    @include tabletMQ {
       color: #31352E;
@@ -52,7 +60,7 @@
    .divide {
       font-size: 5.3rem;
       transform: rotate(45deg);
-      color: #A6CFD5;
+      color: #418db9e0;
    }
 
    .s {
@@ -106,7 +114,10 @@ nav {
       left: 0;
       right: 0;
       text-align: center;
-      background-color: #EBEBE8cc;
+      background-image: linear-gradient(
+      to right bottom, 
+      rgba(28, 93, 121, 0.95),
+      rgba(130, 217, 255, 0.9));
    }
 
    li:first-of-type {
@@ -118,7 +129,7 @@ nav {
    }
    
    a {
-      color: #31352E;
+      color: #fff;
       text-decoration: none;
       letter-spacing: 1px;
       padding: 10px 15px;
@@ -134,7 +145,7 @@ nav {
          &::after {
             content: "";
             position: absolute;
-            background-color: #A6CFD5;
+            background-color: rgba(130, 217, 255, 0.7);
             height: 17px;
             left: 11px;
             bottom: 7px;

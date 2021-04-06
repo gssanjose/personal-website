@@ -13,38 +13,27 @@ header {
    min-height: 600px;
    background-image: linear-gradient(
       to right bottom, 
-      rgba(28, 93, 121, 0.801),
-      rgba(130, 217, 255, 0.801)), 
+      rgba(28, 93, 121, 0.95),
+      rgba(130, 217, 255, 0.9)), 
       url(../images/mac.jpg);
    background-size: cover;
    background-position: top;
    position: relative;
-
    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-      //    &::after {
-      //       content: "";
-      //       position: absolute;
-      //       background-color: #A6CFD5;
-      //       height: 21px;
-      //       left: -3px;
-      //       bottom: 10px;
-      //       width: 104%;
-      //       z-index: -1;
-      // }
 }
 
 .name {
-   // position: absolute;
-   // top: 20%;
-   // left: 35%;
-   // transform: translate(-50%, -50%);
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .main-heading {
    color: #fff;
    text-transform: uppercase;
-   position: absolute;
-   top: 17%;
+   text-shadow: 0 4px 7px black;
+   // top: 17%;
 }
 
 .intro-name {
@@ -52,24 +41,14 @@ header {
    font-size: 6rem;
    font-weight: 400;
    letter-spacing: 30px;
+   margin-bottom: 10px;
 }
 
 .job-title {
    display: block;
-   font-size: 2rem;
-   font-weight: 700;
-   letter-spacing: 14px;
-
-   // &::after {
-   //    content: "";
-   //    position: absolute;
-   //    background-color: #A6CFD5;
-   //    height: 10px;
-   //    left: -3px;
-   //    bottom: -3px;
-   //    width: 102%;
-   //    z-index: -1;
-   // }
+   font-size: 2.2rem;
+   font-weight: 400;
+   letter-spacing: 12px;
 }
 
 @keyframes moveInLeft {
