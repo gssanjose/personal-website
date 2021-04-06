@@ -7,15 +7,22 @@
       color: #418db9e0;
       background-color: #fff;
       // background-color: #EBEBE8aa;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
       z-index: 10;
       transition: all 0.25s ease;
+      animation: moveInBottom 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
 
       &:hover,
       &:focus {
-         scale: 1.05;
-         box-shadow: 0 3px 10px #31352E;
+         transform: translateY(-3px) scale(1.05);
+         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+
+      &:active {
+         transform: translateY(-1px);
+         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
       }
    }
 
@@ -25,25 +32,30 @@
 }
 
 .logo {
-   z-index: 10;
-   position: absolute;
-   left: 20px;
-   top: 20px;
-   font-size: 3rem;
-   padding: 13px 0;
    font-family: 'Nunito Sans', sans-serif;
-   padding: 0 5px 4px 11px;
-   border-radius: 50%;
+   font-size: 3rem;
    color: #31352E;
    background-color: #ffffffee;
-   // border: 1px solid #31352E;
-   // background-color: #EBEBE8aa;
+   z-index: 10;
+   position: absolute;
+   left: 30px;
+   top: 30px;
+   padding: 0 5px 4px 11px;
+   border-radius: 50%;
+   animation: moveInBottom 0.5s ease-out 0.75s;
+   animation-fill-mode: backwards;
 
    &:hover,
    &:focus {
-      scale: 1.05;
-      box-shadow: 0 3px 10px #31352E;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
    }
+
+   &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+   }
+
 
    @include tabletMQ {
       color: #31352E;

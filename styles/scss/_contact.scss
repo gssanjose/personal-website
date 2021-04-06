@@ -9,7 +9,7 @@
       &::after {
          content: "";
          position: absolute;
-         background-color: #418db9aa;
+         background-color: rgba(130, 217, 255, 0.8);
          height: 23px;
          left: -2px;
          bottom: 75px;
@@ -46,7 +46,7 @@
          &::after {
             content: "";
             position: absolute;
-            background-color: #418db9aa;
+            background-color: rgba(130, 217, 255, 0.8);
             height: 15px;
             left: -2px;
             bottom: 15px;
