@@ -42,6 +42,7 @@ header {
    font-weight: 400;
    letter-spacing: 30px;
    margin-bottom: 10px;
+   animation: moveInLeft 1.2s;
 }
 
 .job-title {
@@ -49,6 +50,7 @@ header {
    font-size: 2.2rem;
    font-weight: 400;
    letter-spacing: 12px;
+   animation: moveInRight 1.2s;
 }
 
 @keyframes moveInLeft {
@@ -58,6 +60,20 @@ header {
    }
    80% {
       transform: translateX(10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes moveInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+   80% {
+      transform: translateX(-10px);
    }
    100% {
       opacity: 1;
