@@ -440,6 +440,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -466,8 +467,8 @@ header {
   font-size: 6rem;
   letter-spacing: 30px;
   margin-bottom: 10px;
-  -webkit-animation: moveInLeft 1.2s;
-          animation: moveInLeft 1.2s;
+  -webkit-animation: moveInLeft 1.2s ease-out;
+          animation: moveInLeft 1.2s ease-out;
 }
 
 @media (max-width: 836px) {
@@ -550,13 +551,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-top: 140px;
-}
-
-@media (max-width: 450px) {
-  .resume-container {
-    margin-top: 70px;
-  }
+  margin-top: 70px;
 }
 
 .resume {
@@ -596,18 +591,6 @@ header {
     font-size: 1.6rem;
     padding: 15px 50px;
   }
-}
-
-.resume::after {
-  content: "";
-  width: 100%;
-  color: #fff;
-  position: relative;
-}
-
-.resume::after:hover, .resume::after:focus {
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
 }
 
 @-webkit-keyframes moveInLeft {
@@ -928,10 +911,12 @@ header {
   height: 320px;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
-          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
   -webkit-animation: bounce 3s linear infinite;
           animation: bounce 3s linear infinite;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 @media (max-width: 1060px) {
@@ -964,8 +949,8 @@ header {
 }
 
 .self-container:hover, .self-container:focus {
-  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
-          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
 }
 
 .hidden {

@@ -17,6 +17,7 @@ header {
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
+   text-align: center;
 
    @include smallTabletMQ {
       top: 30%;
@@ -28,7 +29,6 @@ header {
    text-transform: uppercase;
    text-shadow: 0 4px 7px black;
    font-weight: 400;
-   backface-visibility: hidden;
    
    @include smallTabletMQ {
       line-height: 30px;
@@ -105,11 +105,7 @@ header {
    position: absolute;
    left: 50%;
    transform: translate(-50%, -50%);
-   margin-top: 140px;
-
-   @include mobileMQ {
-      margin-top: 70px;
-   }
+   margin-top: 70px;
 }
 
 .resume {
@@ -141,19 +137,27 @@ header {
       font-size: 1.6rem;
       padding: 15px 50px;
    }
-
-   &::after {
-      content: "";
-      width: 100%;
-      color: #fff;
-      position: relative;
-
-      &:hover,
-      &:focus {
-         transform: scale(2.5);
-      }
-   }
 }
+
+// .resume::after {
+//    content: '';
+//    display: inline-block;
+//    height: 100%;
+//    width: 100%;
+//    border-radius: 100px;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    z-index: 1;
+//    transition: all 0.4s;
+//    color: #fff;
+
+//    &:hover,
+//    &:focus {
+//       transform: scaleX(1.4) scaleY(1.6);
+//       opacity: 0;
+//    }
+// }
 
 @keyframes moveInLeft {
    0% {
