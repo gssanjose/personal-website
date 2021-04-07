@@ -16,7 +16,7 @@ header {
    position: absolute;
    top: 40%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-49%, -50%);
    text-align: center;
 
    @include smallTabletMQ {
@@ -27,8 +27,9 @@ header {
 .main-heading {
    color: #fff;
    text-transform: uppercase;
-   text-shadow: 0 4px 7px black;
+   text-shadow: 0 3px 7px black;
    font-weight: 400;
+   animation: moveInLeft 1.2s ease-out;
    
    @include smallTabletMQ {
       line-height: 30px;
@@ -40,7 +41,6 @@ header {
    font-size: 6rem;
    letter-spacing: 30px;
    margin-bottom: 10px;
-   animation: moveInLeft 1.2s ease-out;
 
    @include tabletMQ {
       font-size: 5rem;

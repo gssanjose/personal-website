@@ -148,7 +148,7 @@
       text-align: center;
 
       @include smallTabletMQ {
-         margin: 0 10 40px;
+         margin: 0 10px 40px;
          width: 80px;
       }
 
@@ -158,6 +158,10 @@
 
          @include smallTabletMQ {
             font-size: 6rem;
+         }
+
+         @include mobileMQ {
+            font-size: 5rem;
          }
       }
 

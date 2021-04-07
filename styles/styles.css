@@ -438,8 +438,8 @@ header {
   position: absolute;
   top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-49%, -50%);
+          transform: translate(-49%, -50%);
   text-align: center;
 }
 
@@ -452,8 +452,10 @@ header {
 .main-heading {
   color: #fff;
   text-transform: uppercase;
-  text-shadow: 0 4px 7px black;
+  text-shadow: 0 3px 7px black;
   font-weight: 400;
+  -webkit-animation: moveInLeft 1.2s ease-out;
+          animation: moveInLeft 1.2s ease-out;
 }
 
 @media (max-width: 640px) {
@@ -467,8 +469,6 @@ header {
   font-size: 6rem;
   letter-spacing: 30px;
   margin-bottom: 10px;
-  -webkit-animation: moveInLeft 1.2s ease-out;
-          animation: moveInLeft 1.2s ease-out;
 }
 
 @media (max-width: 836px) {
@@ -1073,7 +1073,7 @@ header {
 
 @media (max-width: 640px) {
   .about li {
-    margin: 0 10 40px;
+    margin: 0 10px 40px;
     width: 80px;
   }
 }
@@ -1086,6 +1086,12 @@ header {
 @media (max-width: 640px) {
   .about li i {
     font-size: 6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about li i {
+    font-size: 5rem;
   }
 }
 
