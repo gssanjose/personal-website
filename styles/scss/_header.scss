@@ -28,6 +28,7 @@ header {
    text-transform: uppercase;
    text-shadow: 0 4px 7px black;
    font-weight: 400;
+   backface-visibility: hidden;
    
    @include smallTabletMQ {
       line-height: 30px;
@@ -39,7 +40,7 @@ header {
    font-size: 6rem;
    letter-spacing: 30px;
    margin-bottom: 10px;
-   animation: moveInLeft 1.2s;
+   animation: moveInLeft 1.2s ease-out;
 
    @include tabletMQ {
       font-size: 5rem;

@@ -28,6 +28,7 @@
       0 5px 10px #418db933,
       0 6px 10px #418db933;
    animation: bounce 3s linear infinite;
+   backface-visibility: hidden;
 
    @include laptopMQ {
       margin-bottom: 40px;
