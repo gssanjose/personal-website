@@ -571,8 +571,8 @@ header {
   border-radius: 100px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
-          animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation: moveInBottom 0.5s ease-out 2.5s;
+          animation: moveInBottom 0.5s ease-out 2.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
