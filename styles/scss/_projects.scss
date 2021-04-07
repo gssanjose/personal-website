@@ -60,11 +60,6 @@
       display: inline-block;
       transition: all 0.3s ease;
 
-      @include laptopMQ {
-         width: 100%;
-         object-position: center;
-      }
-
       &:hover {
          transform: scale(1.1);
       }

@@ -23,6 +23,11 @@
          transform: translateY(-1px);
          box-shadow: 0 5px 10px rgba(0,0,0,0.2);
       }
+
+      @include smallTabletMQ {
+         top: 15px;
+         right: 15px;
+      }
    }
 
    @include tabletMQ {
@@ -56,8 +61,9 @@
    }
 
 
-   @include tabletMQ {
-      color: #31352E;
+   @include smallTabletMQ {
+      top: 15px;
+      left: 15px;
    }
 
    span {
@@ -80,7 +86,6 @@
 }
 
    .nav-container {
-      // background-color: #EBEBE8aa;
       position: fixed;
       top: 0;
       left: 0;
@@ -94,14 +99,6 @@ nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-
-   // div:nth-of-type(2) {
-
-   //    &:focus,
-   //    &:hover {
-   //       color: #A6CFD5;
-   //    }
-   // }
 
    ul {
          height: 100vh;

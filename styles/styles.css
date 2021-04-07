@@ -258,6 +258,13 @@ html {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 640px) {
+  .hide-menu i {
+    top: 15px;
+    right: 15px;
+  }
+}
+
 @media (max-width: 836px) {
   .hide-menu {
     display: block;
@@ -295,9 +302,10 @@ html {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 836px) {
+@media (max-width: 640px) {
   .logo {
-    color: #31352E;
+    top: 15px;
+    left: 15px;
   }
 }
 
@@ -434,29 +442,166 @@ header {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 640px) {
+  .name {
+    top: 30%;
+  }
+}
+
 .main-heading {
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0 4px 7px black;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .main-heading {
+    line-height: 30px;
+  }
 }
 
 .intro-name {
   display: block;
   font-size: 6rem;
-  font-weight: 400;
   letter-spacing: 30px;
   margin-bottom: 10px;
   -webkit-animation: moveInLeft 1.2s;
           animation: moveInLeft 1.2s;
 }
 
+@media (max-width: 836px) {
+  .intro-name {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-name {
+    letter-spacing: 20px;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro-name {
+    letter-spacing: 9px;
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+  }
+}
+
 .job-title {
-  display: block;
-  font-size: 2.2rem;
-  font-weight: 400;
+  display: inline-block;
+  font-size: 2.1rem;
   letter-spacing: 12px;
-  -webkit-animation: moveInRight 1.2s;
-          animation: moveInRight 1.2s;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  -webkit-animation: typewriter 1s 1.3s;
+          animation: typewriter 1s 1.3s;
+  -webkit-animation-timing-function: steps(25, end);
+          animation-timing-function: steps(25, end);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@media (max-width: 836px) {
+  .job-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .job-title {
+    letter-spacing: 6px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .job-title span {
+    display: block;
+  }
+}
+
+.job-title::after {
+  content: "|";
+  font-size: 2.7rem;
+  position: absolute;
+  right: -14px;
+  bottom: 3px;
+  -webkit-animation: caret 1s infinite;
+          animation: caret 1s infinite;
+  -webkit-animation-timing-function: steps(1, end);
+          animation-timing-function: steps(1, end);
+}
+
+@media (max-width: 640px) {
+  .job-title::after {
+    right: -7px;
+    bottom: 3px;
+    font-size: 2rem;
+  }
+}
+
+.resume-container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 140px;
+}
+
+.resume {
+  display: inline-block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #31352E;
+  background-color: #fff;
+  padding: 15px 60px;
+  border-radius: 100px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+          animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.resume:hover, .resume:focus {
+  -webkit-transform: translateY(-3px) scale(1.05);
+          transform: translateY(-3px) scale(1.05);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resume:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .resume {
+    font-size: 1.6rem;
+    padding: 15px 50px;
+  }
+}
+
+.resume::after {
+  content: "";
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.resume::after:hover, .resume::after:focus {
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 @-webkit-keyframes moveInLeft {
@@ -553,6 +698,42 @@ header {
   }
 }
 
+@-webkit-keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .projects h2 {
   padding: 100px 0;
   position: relative;
@@ -618,14 +799,6 @@ header {
   display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-@media (max-width: 1060px) {
-  .projects img {
-    width: 100%;
-    -o-object-position: center;
-       object-position: center;
-  }
 }
 
 .projects img:hover {
@@ -749,8 +922,8 @@ header {
   height: 320px;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
-          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
   -webkit-animation: bounce 3s linear infinite;
           animation: bounce 3s linear infinite;
 }
@@ -785,8 +958,8 @@ header {
 }
 
 .self-container:hover, .self-container:focus {
-  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
-          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
 }
 
 .hidden {
@@ -1118,7 +1291,7 @@ header {
 }
 
 .contact-section .my-info ul a:focus, .contact-section .my-info ul a:hover {
-  background-color: #418db9aa;
+  background-color: rgba(130, 217, 255, 0.8);
   -webkit-box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
           box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
 }
@@ -1153,7 +1326,7 @@ header {
 .contact-section .send-message input, .contact-section .send-message textarea {
   border-radius: 5px;
   padding: 5px 10px;
-  border: 2px solid #418db9aa;
+  border: 2px solid rgba(130, 217, 255, 0.8);
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
   resize: none;
@@ -1281,4 +1454,5 @@ ul {
 
 a {
   position: relative;
+  text-decoration: none;
 }

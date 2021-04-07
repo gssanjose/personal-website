@@ -81,7 +81,7 @@
 
             &:focus,
             &:hover {
-               background-color: #418db9aa;
+               background-color: rgba(130, 217, 255, 0.8);
                box-shadow: 0 1px 10px #31352E55, 0 2px 10px #31352E33, 0 3px 10px #31352E11;
             }
          }
@@ -106,7 +106,7 @@
       input, textarea {
          border-radius: 5px;
          padding: 5px 10px;
-         border: 2px solid #418db9aa;
+         border: 2px solid rgba(130, 217, 255, 0.8);
          transition: border 0.3s ease;
          resize: none;
 

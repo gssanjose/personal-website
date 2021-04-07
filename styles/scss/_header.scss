@@ -1,13 +1,3 @@
-// #myVideo {
-//    width: 100vw;
-//    height: 100vh;
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    right: 0;
-//    opacity: 0.9;
-// }
-
 header {
    height: 95vh;
    min-height: 600px;
@@ -27,30 +17,137 @@ header {
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
+
+   @include smallTabletMQ {
+      top: 30%;
+   }
 }
 
 .main-heading {
    color: #fff;
    text-transform: uppercase;
    text-shadow: 0 4px 7px black;
-   // top: 17%;
+   font-weight: 400;
+   
+   @include smallTabletMQ {
+      line-height: 30px;
+   }
 }
 
 .intro-name {
    display: block;
    font-size: 6rem;
-   font-weight: 400;
    letter-spacing: 30px;
    margin-bottom: 10px;
    animation: moveInLeft 1.2s;
+
+   @include tabletMQ {
+      font-size: 5rem;
+   }
+
+   @include smallTabletMQ {
+      letter-spacing: 20px;
+      font-size: 4rem;
+   }
+
+   @include mobileMQ {
+      letter-spacing: 9px;
+      font-size: 2.7rem;
+      margin-bottom: 50px;
+   }
 }
 
 .job-title {
-   display: block;
-   font-size: 2.2rem;
-   font-weight: 400;
+   display: inline-block;
+   font-size: 2.1rem;
    letter-spacing: 12px;
-   animation: moveInRight 1.2s;
+   overflow: hidden;
+   white-space: nowrap;
+   position: relative;
+   animation: typewriter 1s 1.3s;
+   animation-timing-function: steps(25, end);
+   animation-fill-mode: backwards;
+
+   @include tabletMQ {
+      font-size: 1.8rem;
+   }
+
+   @include smallTabletMQ {
+      letter-spacing: 6px;
+      font-size: 1.6rem;
+   }
+
+   span {
+      @include mobileMQ {
+         display: block;
+      }
+   }
+}
+
+.job-title::after {
+   content: "|";
+   font-size: 2.7rem;
+   position: absolute;
+   right: -14px;
+   bottom: 3px;
+   animation: caret 1s infinite;
+   animation-timing-function: steps(1, end);
+
+   @include smallTabletMQ {
+      right: -7px;
+      bottom: 3px;
+      font-size: 2rem;
+   }
+}
+
+.resume-container {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 140px;
+}
+
+.resume {
+   display: inline-block;
+   font-family: 'Nunito Sans', sans-serif;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #31352E;
+   background-color: #fff;
+   padding: 15px 60px;
+   border-radius: 100px;
+   transition: all 0.25s ease;
+   animation: moveInBottom 0.5s ease-out 0.75s;
+   animation-fill-mode: backwards;
+
+   &:hover,
+   &:focus {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+   }
+
+   &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+   }
+
+   @include smallTabletMQ {
+      font-size: 1.6rem;
+      padding: 15px 50px;
+   }
+
+   &::after {
+      content: "";
+      width: 100%;
+      color: #fff;
+      position: relative;
+
+      &:hover,
+      &:focus {
+         transform: scale(2.5);
+      }
+   }
 }
 
 @keyframes moveInLeft {
@@ -89,5 +186,23 @@ header {
    100% {
       opacity: 1;
       transform: translate(0);
+   }
+}
+
+@keyframes typewriter {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 100%;
+   }
+}
+
+@keyframes caret {
+   0%, 100% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
    }
 }
