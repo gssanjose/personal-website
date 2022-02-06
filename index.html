@@ -1,209 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Glen San Jose | Web Developer</title>
-   <link rel="stylesheet" href="./styles/styles.css">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
-</head>
-<body>
-   
-   <div class="nav-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glen San Jose | Web Developer</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
       <nav class="wrapper">
-         <div>
-            <a class="logo" href="https://glensanjose.com"><span class="g">g</span><span class="divide">|</span><span class="s">s</span></a>
-         </div>
-         <div id="menu-button" tabindex="0" class="hide-menu">
-            <i class="fas fa-bars" id="hamburger"></i>
-         </div>
-         <ul id="nav-menu">
-            <li><a href="#projects" class="section-link">Projects</a></li>
-            <li><a href="#about" class="section-link about-link">About</a></li>
-            <li><a href="#contact" class="section-link">Contact</a></li>
-         </ul>
+        <div>
+          <a class="logo" href="https://glensanjose.com"
+            ><span class="g">g</span><span class="divide">|</span
+            ><span class="s">s</span></a
+          >
+        </div>
+        <div id="menu-button" tabindex="0" class="hide-menu">
+          <i class="fas fa-bars" id="hamburger"></i>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="#projects" class="section-link">Projects</a></li>
+          <li><a href="#about" class="section-link about-link">About</a></li>
+          <li><a href="#contact" class="section-link">Contact</a></li>
+        </ul>
       </nav>
-   </div>
+    </div>
 
-   <header>
-         <div class="name">
-            <h1 class="main-heading">
-               <span class="intro-name">I'm Glen</span>
-               <span class="job-title">A front-end <span>web developer_</span></span>
-            </h1>
-            <div class="resume-container">
-               <a href="./assets/glen-allan-san-jose-resume.pdf" class="resume" target="_blank">Resume</a>
-            </div>
-         </div>
-   </header>
+    <header>
+      <div class="name">
+        <h1 class="main-heading">
+          <span class="intro-name">I'm Glen</span>
+          <span class="job-title">A front-end <span>web developer_</span></span>
+        </h1>
+        <div class="resume-container">
+          <a
+            href="./assets/glen-sanjose-resume.pdf"
+            class="resume"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+      </div>
+    </header>
 
-   <main>
-      
+    <main>
       <!-- PROJECT SECTION START -->
       <section class="wrapper projects" id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="500">My Projects</h2>
+        <section
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <div class="preview">
+            <a
+              href="https://pokeselector.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              tabindex="-1"
+            >
+              <img
+                src="./images/mac-poke-image.png"
+                alt="poke selector website preview"
+              />
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>
+              <a
+                href="https://pokeselector.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Poké Selector</a
+              >
+            </h3>
+            <p>A fun and colorful Pokémon finder and generator</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>Rest APIs</li>
+              <li>Pair programming</li>
+            </ul>
+            <h4>
+              <a
+                href="https://github.com/Glen-AllanSJ-LawrenceL/pokeSelector"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See the code</a
+              >
+            </h4>
+            <p>
+              Developed with:
+              <a
+                href="https://github.com/LawrenceLCodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lawrence Lee</a
+              >
+            </p>
+          </div>
+        </section>
 
-         <h2 data-aos="fade-up" data-aos-duration="500">My Projects</h2>
-            <section class="project-card" data-aos="fade-up" data-aos-duration="500">
-               <div class="preview">
-                  <a href="https://pokeselector.netlify.app/" target="_blank" rel="noopener noreferrer" tabindex="-1">
-                     <img src="./images/mac-poke-image.png" alt="poke selector website preview">
-                  </a>
-               </div>
-               <div class="project-details">
-                  <h3>
-                     <a href="https://pokeselector.netlify.app/" target="_blank" rel="noopener noreferrer">Poké Selector</a>
-                  </h3>
-                  <p>A fun and colorful Pokémon finder and generator</p>
-                  <ul>
-                     <li>HTML5</li>
-                     <li>CSS3</li>
-                     <li>SCSS</li>
-                     <li>JavaScript</li>
-                     <li>Rest APIs</li>
-                     <li>Pair programming</li>
-                  </ul>
-                  <h4>
-                     <a href="https://github.com/Glen-AllanSJ-LawrenceL/pokeSelector" target="_blank" rel="noopener noreferrer">See the code</a>
-                  </h4>
-                  <p>Developed with: <a href="https://github.com/LawrenceLCodes" target="_blank" rel="noopener noreferrer">Lawrence Lee</a></p>
-               </div>
-            </section>
+        <section
+          class="reverse-wrap"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <div class="project-details">
+            <h3>
+              <a
+                href="https://motiveboard.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Motivation Board</a
+              >
+            </h3>
+            <p>
+              A platform where users can post affirming and motivational
+              messages for others to see and interact with
+            </p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+            <h4>
+              <a
+                href="https://github.com/gssanjose/motive-board"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See the code</a
+              >
+            </h4>
+          </div>
+          <div class="preview">
+            <a
+              href="https://motiveboard.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              tabindex="-1"
+            >
+              <img
+                src="./images/mac-motive-board-image.png"
+                alt="motivation board website preview"
+              />
+            </a>
+          </div>
+        </section>
 
-            <section class="reverse-wrap" data-aos="fade-up" data-aos-duration="500">
-               <div class="project-details">
-               <h3>
-                  <a href="https://motiveboard.netlify.app/" target="_blank" rel="noopener noreferrer">Motivation Board</a>
-               </h3>
-               <p>A platform where users can post affirming and motivational messages for others to see and interact with</p>
-               <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Firebase</li>
-               </ul>
-               <h4>
-                  <a href="https://github.com/gssanjose/motive-board" target="_blank" rel="noopener noreferrer">See the code</a>
-               </h4>
-            </div>
-               <div class="preview">
-                  <a href="https://motiveboard.netlify.app/" target="_blank" rel="noopener noreferrer" tabindex="-1">
-                     <img src="./images/mac-motive-board-image.png" alt="motivation board website preview">
-                  </a>
-               </div>
-            </section>
-
-            <section data-aos="fade-up" data-aos-duration="500">
-               <div class="preview">
-                  <a href="https://write-on.netlify.app/" target="_blank" rel="noopener noreferrer" tabindex="-1">
-                     <img src="./images/mac-write-on.png" alt="Write On website preview">
-                  </a>
-               </div>
-               <div class="project-details">
-                  <h3>
-                     <a href="https://write-on.netlify.app/" target="_blank" rel="noopener noreferrer">Write On</a>
-                  </h3>
-                  <p>A web application that gives a user a writing work space. The user can set a work timer, use a given writing prompt, and submit their own writing prompts as well</p>
-                  <ul>
-                     <li>HTML5</li>
-                     <li>CSS3</li>
-                     <li>SCSS</li>
-                     <li>JavaScript</li>
-                     <li>React</li>
-                     <li>Firebase</li>
-                     <li>Team programming</li>
-                  </ul>
-                  <h4>
-                     <a href="https://github.com/BeAnGlAm" target="_blank" rel="noopener noreferrer">See the code</a>
-                  </h4>
-                  <p>Developed with: <a href="https://github.com/amybradford" target="_blank" rel="noopener noreferrer">Amy Bradford, </a> <a href="https://github.com/mortultra" target="_blank" rel="noopener noreferrer">Andrew Campbell, </a> <a href="https://github.com/BeatriceDuncan" target="_blank" rel="noopener noreferrer">Bea Duncan</a></p>
-               </div>
-            </section>
-         
+        <section data-aos="fade-up" data-aos-duration="500">
+          <div class="preview">
+            <a
+              href="https://write-on.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              tabindex="-1"
+            >
+              <img
+                src="./images/mac-write-on.png"
+                alt="Write On website preview"
+              />
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>
+              <a
+                href="https://write-on.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Write On</a
+              >
+            </h3>
+            <p>
+              A web application that gives a user a writing work space. The user
+              can set a work timer, use a given writing prompt, and submit their
+              own writing prompts as well
+            </p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Firebase</li>
+              <li>Team programming</li>
+            </ul>
+            <h4>
+              <a
+                href="https://github.com/BeAnGlAm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See the code</a
+              >
+            </h4>
+            <p>
+              Developed with:
+              <a
+                href="https://github.com/amybradford"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Amy Bradford,
+              </a>
+              <a
+                href="https://github.com/mortultra"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Andrew Campbell,
+              </a>
+              <a
+                href="https://github.com/BeatriceDuncan"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Bea Duncan</a
+              >
+            </p>
+          </div>
+        </section>
       </section>
       <!-- PROJECT SECTION END -->
 
       <!-- ABOUT SECTION START -->
       <section id="about" class="wrapper about-wrapper">
-         <h2 data-aos="fade-up" data-aos-duration="500">About Me</h2>
-         <section class="about">
-            <div class="about-me">
-               <div data-aos="fade-up" data-aos-duration="500">
-                  <p>Hey! Thanks for scrolling this far! I just recently graduated from <a href="https://junocollege.com/" target="_blank" rel="noopener noreferrer">Juno College of Technology</a> through their Immersive Web Development Bootcamp with cohort 31! I love creating and learning new ways to make web pages come to life.</p>
-                  <p>Previously, I graduated from Seneca College studying building engineering.</p>
-                  <p>Aside from coding, I love practicing martial arts (right now mostly boxing), playing basketball, video games, and sitting back watching good shows.</p>
-               </div>
-               <section class="self-container" tabindex="0">
-                  <img id="self-drawing" class="shown pic" src="./images/glen-portrait.jpg" alt="handsome drawing of myself">
-                  <img id="self-pic" class="hidden pic" src="./images/glensq.jpg" alt="handsome photo of myself">
-               </section>
+        <h2 data-aos="fade-up" data-aos-duration="500">About Me</h2>
+        <section class="about">
+          <div class="about-me">
+            <div data-aos="fade-up" data-aos-duration="500">
+              <p>
+                Hey! Thanks for scrolling this far! I just recently graduated
+                from
+                <a
+                  href="https://junocollege.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Juno College of Technology</a
+                >
+                through their Immersive Web Development Bootcamp with cohort 31!
+                I love creating and learning new ways to make web pages come to
+                life.
+              </p>
+              <p>
+                Previously, I graduated from Seneca College studying building
+                engineering.
+              </p>
+              <p>
+                Aside from coding, I love practicing martial arts (right now
+                mostly boxing), playing basketball, video games, and sitting
+                back watching good shows.
+              </p>
             </div>
-            <div>
-               <ul>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"><i class="fab fa-html5"></i>HTML5</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"><i class="fab fa-css3-alt"></i>CSS3</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"><i class="fab fa-sass"></i>SCSS</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"><i class="fab fa-js-square"></i>JavaScript</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"><i class="devicon-jquery-plain"></i>jQuery</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"><i class="fab fa-get-pocket"></i>Rest APIs</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="800"><i class="devicon-firebase-plain"></i>Firebase</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"><i class="fab fa-react"></i>React</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000"><i class="fab fa-github"></i>Git & GitHub</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100"><i class="fas fa-mobile-alt"></i>Responsive Design</li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"><i class="fas fa-universal-access"></i>Accessibility</li>
-               </ul>
-            </div>
-         </section>
+            <section class="self-container" tabindex="0">
+              <img
+                id="self-drawing"
+                class="shown pic"
+                src="./images/glen-portrait.jpg"
+                alt="handsome drawing of myself"
+              />
+              <img
+                id="self-pic"
+                class="hidden pic"
+                src="./images/glensq.jpg"
+                alt="handsome photo of myself"
+              />
+            </section>
+          </div>
+          <div>
+            <ul>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="200"
+              >
+                <i class="fab fa-html5"></i>HTML5
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="300"
+              >
+                <i class="fab fa-css3-alt"></i>CSS3
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="400"
+              >
+                <i class="fab fa-sass"></i>SCSS
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="500"
+              >
+                <i class="fab fa-js-square"></i>JavaScript
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="600"
+              >
+                <i class="devicon-jquery-plain"></i>jQuery
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="700"
+              >
+                <i class="fab fa-get-pocket"></i>Rest APIs
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="800"
+              >
+                <i class="devicon-firebase-plain"></i>Firebase
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="900"
+              >
+                <i class="fab fa-react"></i>React
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="1000"
+              >
+                <i class="fab fa-github"></i>Git & GitHub
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="1100"
+              >
+                <i class="fas fa-mobile-alt"></i>Responsive Design
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="1200"
+              >
+                <i class="fas fa-universal-access"></i>Accessibility
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
       <!-- ABOUT SECTION END -->
 
       <!-- CONTACT SECTION START -->
       <section id="contact" class="contact">
-         <h2 class="wrapper" data-aos="fade-up" data-aos-duration="500">Contact</h2>
-         <div class="contact-section wrapper">
-            <div class="my-info" data-aos="fade-up" data-aos-duration="500">
-               <h3>Let's Talk!</h3>
-               <p>If you ever want to have a conversation, share some code, or you're looking for a web developer, you can find me on social media or message me here!</p>
-               <ul>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" aria-label="linked in"><a href="https://www.linkedin.com/in/glen-allan-san-jose-ba3a67201/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" aria-label="twitter"><a href="https://twitter.com/coderglen" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" aria-label="github"><a href="https://github.com/gssanjose" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-                  <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" aria-label="email"><a href="mailto:glen.sanjose@hotmail.ca?subject=Message from your website"><i class="fas fa-envelope-open"></i></a></li>
-               </ul>
-            </div>
-            <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" class="send-message" data-aos="fade-up" data-aos-duration="500">
-               <label for="user-name" class="sr-only">Name</label>
-               <input type="text" name="user-name" id="user-name" class="user-name" placeholder="name" required>
-   
-               <label for="email" class="sr-only">Email</label>
-               <input type="email" name="email" id="email" class="email" placeholder="email" required>
-   
-               <label for="message" class="sr-only">message</label>
-               <textarea name="message" id="message" placeholder="message" required></textarea>
-   
-               <button class="send-button" type="submit">Send</button>
-            </form>
-         </div>
+        <h2 class="wrapper" data-aos="fade-up" data-aos-duration="500">
+          Contact
+        </h2>
+        <div class="contact-section wrapper">
+          <div class="my-info" data-aos="fade-up" data-aos-duration="500">
+            <h3>Let's Talk!</h3>
+            <p>
+              If you ever want to have a conversation, share some code, or
+              you're looking for a web developer, you can find me on social
+              media or message me here!
+            </p>
+            <ul>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                aria-label="linked in"
+              >
+                <a
+                  href="https://www.linkedin.com/in/glen-allan-san-jose-ba3a67201/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="300"
+                aria-label="twitter"
+              >
+                <a
+                  href="https://twitter.com/coderglen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="400"
+                aria-label="github"
+              >
+                <a
+                  href="https://github.com/gssanjose"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="500"
+                aria-label="email"
+              >
+                <a
+                  href="mailto:glen.sanjose@hotmail.ca?subject=Message from your website"
+                  ><i class="fas fa-envelope-open"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            enctype="multipart/form-data"
+            class="send-message"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <label for="user-name" class="sr-only">Name</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="user-name"
+              placeholder="name"
+              required
+            />
+
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="message" class="sr-only">message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="message"
+              required
+            ></textarea>
+
+            <button class="send-button" type="submit">Send</button>
+          </form>
+        </div>
       </section>
       <!-- CONTACT SECTION END -->
 
       <footer>
-         <!-- <div id="footer-button" class="hide-footer">
+        <!-- <div id="footer-button" class="hide-footer">
             <i class="fas fa-sort-up"></i>
          </div> -->
-         <p>Created and designed by Glen San Jose <sup>&copy;</sup> 2021</p>
-         <p>Beautiful portrait done by Sharlaine Sevilla</p>
+        <p>Created and designed by Glen San Jose <sup>&copy;</sup> 2021</p>
+        <p>Beautiful portrait done by Sharlaine Sevilla</p>
       </footer>
+    </main>
 
-   </main>
-
-   <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
