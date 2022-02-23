@@ -474,12 +474,13 @@ header {
 @media (max-width: 836px) {
   .intro-name {
     font-size: 5rem;
+    letter-spacing: 19px;
   }
 }
 
 @media (max-width: 640px) {
   .intro-name {
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     font-size: 4rem;
   }
 }
@@ -556,11 +557,11 @@ header {
 
 .resume {
   display: inline-block;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #31352E;
+  color: #31352e;
   background-color: #fff;
   padding: 15px 60px;
   border-radius: 100px;
@@ -706,7 +707,8 @@ header {
 }
 
 @-webkit-keyframes caret {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -715,7 +717,8 @@ header {
 }
 
 @keyframes caret {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -911,8 +914,8 @@ header {
   height: 320px;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
-          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+  -webkit-box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
+          box-shadow: 0 4px 10px #418db933, 0 5px 10px #418db933, 0 6px 10px #418db933;
   -webkit-animation: bounce 3s linear infinite;
           animation: bounce 3s linear infinite;
   -webkit-backface-visibility: hidden;
@@ -949,8 +952,8 @@ header {
 }
 
 .self-container:hover, .self-container:focus {
-  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
-          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+  -webkit-box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
+          box-shadow: 0 0.8px 11px #418db977, 0 1.1px 11px #418db977, 0 1.4px 11px #418db977;
 }
 
 .hidden {
