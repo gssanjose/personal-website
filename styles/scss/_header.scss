@@ -1,142 +1,144 @@
 header {
-   height: 95vh;
-   min-height: 600px;
-   background-image: linear-gradient(
-      to right bottom, 
+  height: 95vh;
+  min-height: 600px;
+  background-image: linear-gradient(
+      to right bottom,
       rgba(28, 93, 121, 0.95),
-      rgba(130, 217, 255, 0.9)), 
-      url(../images/mac.jpg);
-   background-size: cover;
-   background-position: top;
-   position: relative;
-   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+      rgba(130, 217, 255, 0.9)
+    ),
+    url(../images/mac.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
 .name {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-49%, -50%);
-   text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  text-align: center;
 
-   @include smallTabletMQ {
-      top: 30%;
-   }
+  @include smallTabletMQ {
+    top: 30%;
+  }
 }
 
 .main-heading {
-   color: #fff;
-   text-transform: uppercase;
-   text-shadow: 0 3px 7px black;
-   font-weight: 400;
-   animation: moveInLeft 1.2s ease-out;
-   
-   @include smallTabletMQ {
-      line-height: 30px;
-   }
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 3px 7px black;
+  font-weight: 400;
+  animation: moveInLeft 1.2s ease-out;
+
+  @include smallTabletMQ {
+    line-height: 30px;
+  }
 }
 
 .intro-name {
-   display: block;
-   font-size: 6rem;
-   letter-spacing: 30px;
-   margin-bottom: 10px;
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 30px;
+  margin-bottom: 10px;
 
-   @include tabletMQ {
-      font-size: 5rem;
-   }
+  @include tabletMQ {
+    font-size: 5rem;
+    letter-spacing: 19px;
+  }
 
-   @include smallTabletMQ {
-      letter-spacing: 20px;
-      font-size: 4rem;
-   }
+  @include smallTabletMQ {
+    letter-spacing: 10px;
+    font-size: 4rem;
+  }
 
-   @include mobileMQ {
-      letter-spacing: 9px;
-      font-size: 2.7rem;
-      margin-bottom: 30px;
-   }
+  @include mobileMQ {
+    letter-spacing: 9px;
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+  }
 }
 
 .job-title {
-   display: inline-block;
-   font-size: 2.1rem;
-   letter-spacing: 12px;
-   overflow: hidden;
-   white-space: nowrap;
-   position: relative;
-   animation: typewriter 1s 1.3s;
-   animation-timing-function: steps(25, end);
-   animation-fill-mode: backwards;
+  display: inline-block;
+  font-size: 2.1rem;
+  letter-spacing: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typewriter 1s 1.3s;
+  animation-timing-function: steps(25, end);
+  animation-fill-mode: backwards;
 
-   @include tabletMQ {
-      font-size: 1.8rem;
-   }
+  @include tabletMQ {
+    font-size: 1.8rem;
+  }
 
-   @include smallTabletMQ {
-      letter-spacing: 6px;
-      font-size: 1.6rem;
-   }
+  @include smallTabletMQ {
+    letter-spacing: 6px;
+    font-size: 1.6rem;
+  }
 
-   span {
-      @include mobileMQ {
-         display: block;
-      }
-   }
+  span {
+    @include mobileMQ {
+      display: block;
+    }
+  }
 }
 
 .job-title::after {
-   content: "|";
-   font-size: 2.7rem;
-   position: absolute;
-   right: -14px;
-   bottom: 3px;
-   animation: caret 1s infinite;
-   animation-timing-function: steps(1, end);
+  content: "|";
+  font-size: 2.7rem;
+  position: absolute;
+  right: -14px;
+  bottom: 3px;
+  animation: caret 1s infinite;
+  animation-timing-function: steps(1, end);
 
-   @include smallTabletMQ {
-      right: -7px;
-      bottom: 3px;
-      font-size: 2rem;
-   }
+  @include smallTabletMQ {
+    right: -7px;
+    bottom: 3px;
+    font-size: 2rem;
+  }
 }
 
 .resume-container {
-   position: absolute;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   margin-top: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
 }
 
 .resume {
-   display: inline-block;
-   font-family: 'Nunito Sans', sans-serif;
-   font-size: 1.8rem;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #31352E;
-   background-color: #fff;
-   padding: 15px 60px;
-   border-radius: 100px;
-   transition: all 0.25s ease;
-   animation: moveInBottom 0.5s ease-out 2.5s;
-   animation-fill-mode: backwards;
+  display: inline-block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #31352e;
+  background-color: #fff;
+  padding: 15px 60px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+  animation: moveInBottom 0.5s ease-out 2.5s;
+  animation-fill-mode: backwards;
 
-   &:hover,
-   &:focus {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-   }
+  &:hover,
+  &:focus {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
-   &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-   }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
 
-   @include smallTabletMQ {
-      font-size: 1.6rem;
-      padding: 15px 50px;
-   }
+  @include smallTabletMQ {
+    font-size: 1.6rem;
+    padding: 15px 50px;
+  }
 }
 
 // .resume::after {
@@ -160,58 +162,59 @@ header {
 // }
 
 @keyframes moveInLeft {
-   0% {
-      opacity: 0;
-      transform: translateX(-100px);
-   }
-   80% {
-      transform: translateX(10px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes moveInRight {
-   0% {
-      opacity: 0;
-      transform: translateX(100px);
-   }
-   80% {
-      transform: translateX(-10px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes moveInBottom {
-   0% {
-      opacity: 0;
-      transform: translateY(30px);
-   }
-   100% {
-      opacity: 1;
-      transform: translate(0);
-   }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes typewriter {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 100%;
-   }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes caret {
-   0%, 100% {
-      opacity: 0;
-   }
-   50% {
-      opacity: 1;
-   }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
